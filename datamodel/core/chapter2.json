@@ -454,7 +454,7 @@
 	    "references": [{"type": "dmpbook", "chapter": "2.5.5"}]	    
 	},
 	{
-	    "questionid": 45, "type": "option",
+	    "questionid": 45, "type": "option", "shortuid": "zmu",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Will the data still be understandable after a long time?",
 	    "text": "See also all questions about keeping metadata and data formats. Make sure the metadata is kept close to the data in the archive, and that community supported data formats are used for all long term archiving.",
