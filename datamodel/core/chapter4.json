@@ -16,7 +16,7 @@
 	    ]
 	},
 	{
-	    "questionid": 5, "type": "option",
+	    "questionid": 5, "type": "option", "shortuid": "qzt",
 	    "precondition": {"questionid": 1, "answerid": 1},
 	    "title": "Will you be exploring options, or run in bulk?",
 	    "text": "What will be the operational mode for your workflows? Will you be exploring options by changing tools and tweaking parameters? Of will you be running the same exact workflow on a large number of data files?",
@@ -164,7 +164,7 @@
 	    ]
 	},
 	{
-	    "questionid": 21, "type": "option",
+	    "questionid": 21, "type": "option", "shortuid": "ydj",
 	    "precondition": {"questionid": 1, "answerid": 1},
 	    "title": "Did you choose the workflow engine you will be using?",
 	    "answers":

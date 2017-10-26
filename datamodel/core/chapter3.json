@@ -146,7 +146,7 @@
 	    ]
 	},
 	{
-	    "questionid": 3, "type": "option",
+	    "questionid": 3, "type": "option", "shortuid": "ybw",
 	    "title": "Do you have any non-equipment data capture?",
 	    "text": "Does the data you collect contain non-equipment captured data such as questionnaires, case report forms, electronic patient records?",
 	    "answers": 
@@ -167,7 +167,7 @@
 	    ]
 	},
 	{
-	    "questionid": 19, "type": "option",
+	    "questionid": 19, "type": "option", "shortuid": "hfg",
 	    "precondition": {"questionid": 3, "answerid": 1},
 	    "title": "Will you be collecting case report forms?",
 	    "answers":

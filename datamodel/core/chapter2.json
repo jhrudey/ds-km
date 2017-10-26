@@ -7,7 +7,7 @@
     "questions" :
     [
 	{
-	    "questionid": 1, "type": "option",
+	    "questionid": 1, "type": "option", "shortuid": "njy",
 	    "title": "Have you identified types of data that you will use that are used by others too?",
 	    "text": "Some types of data (e.g. genetic variants in the life sciences) are used by many different projects. For such data, often common standards exist that help to make these data reusable. Are you using such common data formats?",
 	    "answers":
@@ -18,7 +18,7 @@
 	    "references": [{"type": "dmpbook", "chapter": "2.1"}]
 	},
 	{
-	    "questionid": 2, "type": "option",
+	    "questionid": 2, "type": "option", "shortuid": "ikk",
 	    "title": "Will you be using new types of data?",
 	    "text": "Sometimes the type of data you collect can not be stored in a commonly used data format. In such cases you may need to make your own, keeping interoperability as high as possible.",
 	    "answers":
@@ -46,7 +46,7 @@
 	    "title": "Which data type registries will you use?"
 	},
 	{
-	    "questionid": 8, "type": "option",
+	    "questionid": 8, "type": "option", "shortuid": "ske",
 	    "precondition": { "questionid": 2, "answerid": 1 },
 	    "title": "Do you need to create vocabularies or ontologies for any of your data items?",
 	    "text": "For good interoperability the use of controlled vocabularies for each discrete data item is advisable. If such vocabularies exist, it is best to reuse those.",
@@ -58,7 +58,7 @@
 	    "references": [{"type": "dmpbook", "chapter": "2.2.2"}]
 	},
 	{
-	    "questionid": 10, "type": "option",
+	    "questionid": 10, "type": "option", "shortuid": "jwg",
 	    "precondition": { "questionid": 2, "answerid": 1 },
 	    "title": "How will you design your new data format?",
 	    "answers":
@@ -80,7 +80,7 @@
 	    ]
 	},
 	{
-	    "questionid": 3, "type": "option",
+	    "questionid": 3, "type": "option", "shortuid": "rhm",
 	    "title": "How will you be storing metadata?",
 	    "text": "For the re-usability of your data by yourself or others at a later stage, a lot of information about the data, how it was collected and how it can be used should be stored with the data. Such data about the data is called metadata, and this set of questions are about this metadata",
 	    "answers":
@@ -133,7 +133,7 @@
 	    ]
 	},
 	{
-	    "questionid": 16, "type": "option",
+	    "questionid": 16, "type": "option", "shortuid": "spg",
 	    "precondition": { "questionid": 3, "answerid": 1 },
 	    "title": "Did you consider how to monitor data integrity?",
 	    "text": "Working with large amounts of heterogenous data in a larger research group has implications for the data integrity. How do you make sure every step of the workflow is done with the right version of the data? How do you handle the situation when a mistake is uncovered? Will you be able to redo the strict minimum data handling?",
@@ -177,7 +177,7 @@
 	    ]
 	},
 	{
-	    "questionid": 19, "type": "option",
+	    "questionid": 19, "type": "option", "shortuid": "atw",
 	    "precondition": { "questionid": 20, "answerid": 1 },
 	    "title": "Will you store the licenses with the data at all time?",
 	    "text": "It is very likely that data will be moved and copied. At some point people may lose track of the origins. It can be helpful to have the licenses (of coarse as open as possible) stored in close association with the data.",
@@ -245,7 +245,7 @@
 	    ]
 	},
  	{
-	    "questionid": 26, "type": "option",
+	    "questionid": 26, "type": "option", "shortuid": "kjp",
 	    "title": "Will you be archiving data (using so-called 'cold storage') for long term preservation?",
 	    "text": "Much of the raw data you have will need to be archived for your own later use somewhere. This is often done off-line on tape, not on the disks of the compute facility. Please note that this does not refer to the data publication; questions related to data publication will follow later.",
 	    "answers":
@@ -256,7 +256,7 @@
 	    "references": [{"type": "dmpbook", "chapter": "2.5.1.1"}]
 	},
  	{
-	    "questionid": 27, "type": "option",
+	    "questionid": 27, "type": "option", "shortuid": "ixr",
 	    "precondition": { "questionid": 26, "answerid": 0 },
 	    "title": "Can the original data be regenerated?",
 	    "answers":
@@ -278,7 +278,7 @@
 	    ]
 	},
 	{
-	    "questionid": 28, "type": "option",
+	    "questionid": 28, "type": "option", "shortuid": "tgk",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Is the archived data changing over time, needing re-archival?",
 	    "answers":
@@ -371,7 +371,7 @@
 	    ]
 	},
 	{
-	    "questionid": 38, "type": "option",
+	    "questionid": 38, "type": "option", "shortuid": "ybd",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Will your project require the archives to be available on-line?",
 	    "answers":
@@ -443,7 +443,7 @@
 	    ]
 	},
 	{
-	    "questionid": 44, "type": "option",
+	    "questionid": 44, "type": "option", "shortuid": "kdp",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Has it been established how long the archived data need to be kept? For each of the different parts of the archive (raw data / results)?",
 	    "answers":
@@ -491,7 +491,7 @@
 	    "text": "When making the work space, it helps to know whether you expect to work with very many small files, a few very large files, whether you will use a (SQL) database to store most of the data. Maybe your data is suitable for a system like Hadoop? Such information can be collected here."
 	},
 	{
-	    "questionid": 49, "type": "option",
+	    "questionid": 49, "type": "option", "shortuid": "wia",
 	    "precondition": { "questionid": 47, "answerid": 1 },
 	    "title": "Do you need the work space to be close to the compute capacity?",
 	    "text": "If you have large volumes of data that are intensely and repeatedly used by the computing work flow, it may be needed to keep the storage in the same place as where the computing takes place.",
@@ -703,7 +703,7 @@
 	    ]
 	},
 	{
-	    "questionid": 67, "type": "option",
+	    "questionid": 67, "type": "option", "shortuid": "cbq",
 	    "precondition": { "questionid": 66, "answerid": 1 },
 	    "title": "Is there software in the work space? Can it also be restored quickly?",
 	    "answers":
