@@ -27,6 +27,12 @@
                 "minimum": 0
             }
         },
+        "uids": {
+            "shortuid": {
+                "type": "string",
+                "pattern": "^[a-z]{3,5}$"
+            }
+        },
         "questionpointer": {
             "type": "object",
             "properties": {
@@ -134,6 +140,7 @@
                     "questionid": { "$ref": "#/common/ids/questionid" },
                     "title": { "type": "string" },
                     "text": { "type": "string" },
+                    "shortuid": { "$ref": "#/common/uids/shortuid" },
                     "precondition": { "$ref": "#/common/precondition" },
                     "references": { "$ref": "#/common/references/references" },
                     "experts": { "$ref": "#/common/experts/experts" }
