@@ -27,6 +27,12 @@
                 "minimum": 0
             }
         },
+        "uids": {
+            "uid": {
+                "type": "string",
+                "pattern": "^[abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ]{5}$"
+            }
+        },
         "questionpointer": {
             "type": "object",
             "properties": {
@@ -115,6 +121,7 @@
                 "type": "object",
                 "properties": {
                     "id": { "$ref" : "#/common/ids/answerid" },
+                    "uid": { "$ref" : "#/common/uids/uid" },
                     "label": { "type": "string" },
                     "advice": { "type": "string" }
                 },
@@ -132,6 +139,7 @@
                 "type": "object",
                 "properties": {
                     "questionid": { "$ref": "#/common/ids/questionid" },
+                    "uid": { "$ref" : "#/common/uids/uid" },
                     "title": { "type": "string" },
                     "text": { "type": "string" },
                     "precondition": { "$ref": "#/common/precondition" },
