@@ -7,7 +7,7 @@
     "questions" :
     [
 	{
-	    "questionid": 1, "type": "option", "shortuid": "njy",
+	    "questionid": 1, "type": "option",
 	    "title": "Have you identified types of data that you will use that are used by others too?",
 	    "text": "Some types of data (e.g. genetic variants in the life sciences) are used by many different projects. For such data, often common standards exist that help to make these data reusable. Are you using such common data formats?",
 	    "answers":
@@ -15,10 +15,10 @@
 		{   "id": 0, "label": "No, I am not using any common data types" },
 		{   "id": 1, "label": "Yes, I will make sure to use common formats for common data types" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.1"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.1"}, {"type": "resourcepage", "shortuid": "njy"}]
 	},
 	{
-	    "questionid": 2, "type": "option", "shortuid": "ikk",
+	    "questionid": 2, "type": "option",
 	    "title": "Will you be using new types of data?",
 	    "text": "Sometimes the type of data you collect can not be stored in a commonly used data format. In such cases you may need to make your own, keeping interoperability as high as possible.",
 	    "answers":
@@ -26,7 +26,7 @@
 		{   "id": 0, "label": "No, all of my data will fit in common formats" },
 		{   "id": 1, "label": "Yes, I will need to use custom formats for some of my data" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.2"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.2"}, {"type": "resourcepage", "shortuid": "ikk"}]
 	},
 	{
 	    "questionid": 7, "type": "option",
@@ -46,7 +46,7 @@
 	    "title": "Which data type registries will you use?"
 	},
 	{
-	    "questionid": 8, "type": "option", "shortuid": "ske",
+	    "questionid": 8, "type": "option",
 	    "precondition": { "questionid": 2, "answerid": 1 },
 	    "title": "Do you need to create vocabularies or ontologies for any of your data items?",
 	    "text": "For good interoperability the use of controlled vocabularies for each discrete data item is advisable. If such vocabularies exist, it is best to reuse those.",
@@ -55,10 +55,10 @@
 		{   "id": 0, "label": "No, suitable public controlled vocabularies or ontologies exist for all of my data types" },
 		{   "id": 1, "label": "Yes, I will make and publish a vocabulary or ontology for some of my data" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.2.2"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.2.2"}, {"type": "resourcepage", "shortuid": "ske"}]
 	},
 	{
-	    "questionid": 10, "type": "option", "shortuid": "jwg",
+	    "questionid": 10, "type": "option",
 	    "precondition": { "questionid": 2, "answerid": 1 },
 	    "title": "How will you design your new data format?",
 	    "answers":
@@ -67,7 +67,7 @@
 		{   "id": 1, "label": "I will use a Linked Data format" },
 		{   "id": 2, "label": "I will use a completely custom data format"}
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.2.3"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.2.3"}, {"type": "resourcepage", "shortuid": "jwg"}]
 	},
 	{
 	    "questionid": 11, "type": "option",
@@ -80,7 +80,7 @@
 	    ]
 	},
 	{
-	    "questionid": 3, "type": "option", "shortuid": "rhm",
+	    "questionid": 3, "type": "option",
 	    "title": "How will you be storing metadata?",
 	    "text": "For the re-usability of your data by yourself or others at a later stage, a lot of information about the data, how it was collected and how it can be used should be stored with the data. Such data about the data is called metadata, and this set of questions are about this metadata",
 	    "answers":
@@ -88,7 +88,7 @@
 		{   "id": 0, "label": "Skip" },
 		{   "id": 1, "label": "Explore" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.3"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.3"}, {"type": "resourcepage", "shortuid": "rhm"}]
 	},
 	{
 	    "questionid": 12, "type": "option",
@@ -133,7 +133,7 @@
 	    ]
 	},
 	{
-	    "questionid": 16, "type": "option", "shortuid": "spg",
+	    "questionid": 16, "type": "option",
 	    "precondition": { "questionid": 3, "answerid": 1 },
 	    "title": "Did you consider how to monitor data integrity?",
 	    "text": "Working with large amounts of heterogenous data in a larger research group has implications for the data integrity. How do you make sure every step of the workflow is done with the right version of the data? How do you handle the situation when a mistake is uncovered? Will you be able to redo the strict minimum data handling?",
@@ -142,7 +142,7 @@
 		{   "id": 0, "label": "Skip" },
 		{   "id": 1, "label": "Explore" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.3.1"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.3.1"}, {"type": "resourcepage", "shortuid": "spg"}]
 	},
 	{
 	    "questionid": 17, "type": "option",
@@ -177,7 +177,7 @@
 	    ]
 	},
 	{
-	    "questionid": 19, "type": "option", "shortuid": "atw",
+	    "questionid": 19, "type": "option",
 	    "precondition": { "questionid": 20, "answerid": 1 },
 	    "title": "Will you store the licenses with the data at all time?",
 	    "text": "It is very likely that data will be moved and copied. At some point people may lose track of the origins. It can be helpful to have the licenses (of coarse as open as possible) stored in close association with the data.",
@@ -186,7 +186,7 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.3.2"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.3.2"}, {"type": "resourcepage", "shortuid": "atw"}]
 	},
 	{
 	    "questionid": 21, "type": "option",
@@ -245,7 +245,7 @@
 	    ]
 	},
  	{
-	    "questionid": 26, "type": "option", "shortuid": "kjp",
+	    "questionid": 26, "type": "option",
 	    "title": "Will you be archiving data (using so-called 'cold storage') for long term preservation?",
 	    "text": "Much of the raw data you have will need to be archived for your own later use somewhere. This is often done off-line on tape, not on the disks of the compute facility. Please note that this does not refer to the data publication; questions related to data publication will follow later.",
 	    "answers":
@@ -253,10 +253,10 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.5.1.1"}]
+	    "references": [{"type": "dmpbook", "chapter": "2.5.1.1"}, {"type": "resourcepage", "shortuid": "kjp"}]
 	},
  	{
-	    "questionid": 27, "type": "option", "shortuid": "ixr",
+	    "questionid": 27, "type": "option",
 	    "precondition": { "questionid": 26, "answerid": 0 },
 	    "title": "Can the original data be regenerated?",
 	    "answers":
@@ -264,7 +264,7 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.5.1.2"}]	    
+	    "references": [{"type": "dmpbook", "chapter": "2.5.1.2"}, {"type": "resourcepage", "shortuid": "ixr"}]	    
 	},
  	{
 	    "questionid": 30, "type": "option",
@@ -278,7 +278,7 @@
 	    ]
 	},
 	{
-	    "questionid": 28, "type": "option", "shortuid": "tgk",
+	    "questionid": 28, "type": "option",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Is the archived data changing over time, needing re-archival?",
 	    "answers":
@@ -286,7 +286,7 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.5.1.3"}]	    
+	    "references": [{"type": "dmpbook", "chapter": "2.5.1.3"}, {"type": "resourcepage", "shortuid": "tgk"}]	    
 	},
 	{
 	    "questionid": 29, "type": "option",
@@ -371,7 +371,7 @@
 	    ]
 	},
 	{
-	    "questionid": 38, "type": "option", "shortuid": "ybd",
+	    "questionid": 38, "type": "option",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Will your project require the archives to be available on-line?",
 	    "answers":
@@ -379,7 +379,7 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.5.3"}]	    
+	    "references": [{"type": "dmpbook", "chapter": "2.5.3"}, {"type": "resourcepage", "shortuid": "ybd"}]	    
 	},
 	{
 	    "questionid": 39, "type": "option",
@@ -443,7 +443,7 @@
 	    ]
 	},
 	{
-	    "questionid": 44, "type": "option", "shortuid": "kdp",
+	    "questionid": 44, "type": "option",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Has it been established how long the archived data need to be kept? For each of the different parts of the archive (raw data / results)?",
 	    "answers":
@@ -451,10 +451,10 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.5.5"}]	    
+	    "references": [{"type": "dmpbook", "chapter": "2.5.5"}, {"type": "resourcepage", "shortuid": "kdp"}]	    
 	},
 	{
-	    "questionid": 45, "type": "option", "shortuid": "zmu",
+	    "questionid": 45, "type": "option",
 	    "precondition": { "questionid": 26, "answerid": 1 },
 	    "title": "Will the data still be understandable after a long time?",
 	    "text": "See also all questions about keeping metadata and data formats. Make sure the metadata is kept close to the data in the archive, and that community supported data formats are used for all long term archiving.",
@@ -463,7 +463,7 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],	
-	    "references": [{"type": "dmpbook", "chapter": "2.5.6"}]    
+	    "references": [{"type": "dmpbook", "chapter": "2.5.6"}, {"type": "resourcepage", "shortuid": "zmu"}]    
 	},
 	{
 	    "questionid": 46, "type": "option",
@@ -491,7 +491,7 @@
 	    "text": "When making the work space, it helps to know whether you expect to work with very many small files, a few very large files, whether you will use a (SQL) database to store most of the data. Maybe your data is suitable for a system like Hadoop? Such information can be collected here."
 	},
 	{
-	    "questionid": 49, "type": "option", "shortuid": "wia",
+	    "questionid": 49, "type": "option",
 	    "precondition": { "questionid": 47, "answerid": 1 },
 	    "title": "Do you need the work space to be close to the compute capacity?",
 	    "text": "If you have large volumes of data that are intensely and repeatedly used by the computing work flow, it may be needed to keep the storage in the same place as where the computing takes place.",
@@ -501,7 +501,7 @@
 		{   "id": 1, "label": "Yes" }
 	    ],
 	    "references": [ {"type": "xref", "chapterid": 2, "questionid": 6 },
-			    {"type": "dmpbook", "chapter": "2.7"}]
+			    {"type": "dmpbook", "chapter": "2.7"}, {"type": "resourcepage", "shortuid": "wia"}]
 	},
 	{
 	    "questionid": 50, "type": "option",
@@ -703,7 +703,7 @@
 	    ]
 	},
 	{
-	    "questionid": 67, "type": "option", "shortuid": "cbq",
+	    "questionid": 67, "type": "option",
 	    "precondition": { "questionid": 66, "answerid": 1 },
 	    "title": "Is there software in the work space? Can it also be restored quickly?",
 	    "answers":
@@ -712,7 +712,7 @@
 		{   "id": 1, "label": "Software in the work space is only a copy" },
 		{   "id": 2, "label": "Special care will be taken for the software and configurations" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "2.6"}]	    
+	    "references": [{"type": "dmpbook", "chapter": "2.6"}, {"type": "resourcepage", "shortuid": "cbq"}]	    
 	},
 	{
 	    "questionid": 68, "type": "option",

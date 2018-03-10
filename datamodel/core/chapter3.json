@@ -146,7 +146,7 @@
 	    ]
 	},
 	{
-	    "questionid": 3, "type": "option", "shortuid": "ybw",
+	    "questionid": 3, "type": "option",
 	    "title": "Do you have any non-equipment data capture?",
 	    "text": "Does the data you collect contain non-equipment captured data such as questionnaires, case report forms, electronic patient records?",
 	    "answers": 
@@ -154,7 +154,7 @@
 		{   "id": 0, "label": "No" },
 		{   "id": 1, "label": "Yes" }
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "3.2.1"}]
+	    "references": [{"type": "dmpbook", "chapter": "3.2.1"}, {"type": "resourcepage", "shortuid": "ybw"}]
 	},
 	{
 	    "questionid": 18, "type": "option",
@@ -167,7 +167,7 @@
 	    ]
 	},
 	{
-	    "questionid": 19, "type": "option", "shortuid": "hfg",
+	    "questionid": 19, "type": "option",
 	    "precondition": {"questionid": 3, "answerid": 1},
 	    "title": "Will you be collecting case report forms?",
 	    "answers":
@@ -175,7 +175,7 @@
 		{    "id": 0, "label": "No"},
 		{    "id": 1, "label": "Yes"}
 	    ],
-	    "references": [{"type": "dmpbook", "chapter": "3.2.1.1"}]	    
+	    "references": [{"type": "dmpbook", "chapter": "3.2.1.1"}, {"type": "resourcepage", "shortuid": "hfg"}]
 	},
 	{
 	    "questionid": 20, "type": "option",
