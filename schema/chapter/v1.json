@@ -28,9 +28,10 @@
             }
         },
         "uids": {
-            "uid": {
-                "type": "string",
-                "pattern": "^[abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ]{5}$"
+            "uuid": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+            },
             "shortuid": {
                 "type": "string",
                 "pattern": "^[a-z]{3,5}$"
@@ -59,6 +60,7 @@
             "expert": {
                 "type": "object",
                 "properties": {
+                    "uuid": { "type": "uuid" },
                     "name": { "type": "string" },
                     "email": { "type": "string", "format": "email" },
                     "class": {
@@ -67,7 +69,7 @@
                         "default": "organisation"
                     }
                 },
-                "required": ["name"]
+                "required": ["uuid", "name"]
             },
             "experts": {
                 "type": "array",
@@ -79,20 +81,22 @@
             "dmpbookreference": {
                 "type": "object",
                 "properties": {
+                    "uuid": { "type": "uuid" },
                     "type" : { "type": "string", "enum": ["dmpbook"] },
                     "chapter": { "type": "string" }
                 },
-                "required" : ["type", "chapter"],
+                "required" : ["uuid", "type", "chapter"],
                 "additionalProperties": false
             },
             "urlreference": {
                 "type": "object",
                 "properties": {
+                    "uuid": { "type": "uuid" },
                     "type" : { "type": "string", "enum": ["url"] },
                     "weblink": { "type": "string", "format": "uri" },
                     "anchor": { "type": "string" }
                 },
-                "required" : ["type", "weblink"],
+                "required" : ["uuid", "type", "weblink"],
                 "additionalProperties": false
             },
             "crossreference": {
@@ -103,16 +107,17 @@
                     "questionid": { "$ref": "#/common/ids/questionid" },
                     "namespace" : { "$ref": "#/common/namespace" }
                 },
-                "required": ["type", "chapterid", "questionid"],
+                "required": ["uuid", "type", "chapterid", "questionid"],
                 "additionalProperties": false
             },
             "resourcepagereference": {
                 "type": "object",
                 "properties": {
+                    "uuid": { "type": "uuid" },
                     "type": { "type": "string", "enum": ["resourcepage"] },
                     "shortuid": { "$ref": "#/common/uids/shortuid" }
                 },
-                "required": ["type", "shortuid"],
+                "required": ["uuid", "type", "shortuid"],
                 "additionalProperties": false
             },
             "reference": {
@@ -133,8 +138,8 @@
             "optionanswer": {
                 "type": "object",
                 "properties": {
+                    "uuid": { "type": "uuid" },
                     "id": { "$ref" : "#/common/ids/answerid" },
-                    "uid": { "$ref" : "#/common/uids/uid" },
                     "label": { "type": "string" },
                     "advice": { "type": "string" }
                 },
@@ -151,15 +156,15 @@
             "question": {
                 "type": "object",
                 "properties": {
+                    "uuid": { "type": "uuid" },
                     "questionid": { "$ref": "#/common/ids/questionid" },
-                    "uid": { "$ref" : "#/common/uids/uid" },
                     "title": { "type": "string" },
                     "text": { "type": "string" },
                     "precondition": { "$ref": "#/common/precondition" },
                     "references": { "$ref": "#/common/references/references" },
                     "experts": { "$ref": "#/common/experts/experts" }
                 },
-                "required": ["questionid"]
+                "required": ["uuid", "questionid"]
             },
             "optionquestion": {
                 "type": "object",
@@ -180,13 +185,14 @@
         "chapter": {
             "type": "object",
             "properties": {
+                "uuid": { "type": "uuid" },
                 "chapterid": { "$ref": "#/common/ids/chapterid" },
                 "namespace": { "$ref": "#/common/namespace" },
                 "formatversion": { "$ref": "#/common/formatversion" },
                 "title": { "type": "string" },
                 "text": { "type": "string" }
             },
-            "required": ["chapterid", "namespace", "formatversion"]
+            "required": ["uuid", "chapterid", "namespace", "formatversion"]
         }
     },
     "core": {
@@ -239,7 +245,7 @@
                             "precondition": { "$ref": "#/core/precondition" },
                             "references": { "$ref": "#/core/references/references" }
                         },
-                        "required": ["questionid", "title"]
+                        "required": ["uuid", "questionid", "title"]
                     }
                 ]
             },
