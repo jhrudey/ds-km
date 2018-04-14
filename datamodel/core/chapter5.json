@@ -7,189 +7,189 @@
 	"questions" :
 	[
 	{
-		"uuid": "", "questionid": 1, "type": "option",
+		"uuid": "109ed7ea-ef1d-4719-b2b4-eb4f7202c65c", "questionid": 1, "type": "option",
 		"title": "How will you be doing the integration of different data sources?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "This as been taken care of" },
-			{ "uuid": "", "id": 1, "label": "Explore this with additional questions" }
+			{ "uuid": "3b573e6c-67a5-442e-937e-33074a14fb96", "id": 0, "label": "This as been taken care of" },
+			{ "uuid": "238ace4b-22bb-4a9d-a312-e30d82d4382d", "id": 1, "label": "Explore this with additional questions" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 6, "type": "option",
+		"uuid": "87fe7235-0a0f-4788-8f44-04523461655f", "questionid": 6, "type": "option",
 		"precondition": { "questionid": 1, "answerid": 1 },
 		"title": "What kind of framework will you use?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "Spreadsheets like Microsoft Excel" },
-			{ "uuid": "", "id": 1, "label": "A regular tabular database" },
-			{ "uuid": "", "id": 2, "label": "A graph database" },
-			{ "uuid": "", "id": 3, "label": "RDF" },
-			{ "uuid": "", "id": 4, "label": "(meta)data fields in a domain specific file" },
-			{ "uuid": "", "id": 98, "label": "A combination of the above" },
-			{ "uuid": "", "id": 99, "label": "We have made other arrangements" }
+			{ "uuid": "e8334918-27f8-4e1c-aa9f-5e8191b7fabb", "id": 0, "label": "Spreadsheets like Microsoft Excel" },
+			{ "uuid": "f5890233-1c5d-4a6b-99ad-be61c6dbfac4", "id": 1, "label": "A regular tabular database" },
+			{ "uuid": "d7911ab4-d3cc-4dc2-95cc-4aba7b0d010a", "id": 2, "label": "A graph database" },
+			{ "uuid": "0c751870-1281-4f38-9a84-3693f56e0499", "id": 3, "label": "RDF" },
+			{ "uuid": "b308b8bb-83ed-4599-ae28-39c5c1218cbf", "id": 4, "label": "(meta)data fields in a domain specific file" },
+			{ "uuid": "a047c886-05e5-4ef5-ad1f-6420e8aa7e26", "id": 98, "label": "A combination of the above" },
+			{ "uuid": "4e6d2cb0-1901-41dd-9902-6066739c9ab5", "id": 99, "label": "We have made other arrangements" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 7, "type": "text",
+		"uuid": "024bb661-70d4-4da6-a938-934a3935b16a", "questionid": 7, "type": "text",
 		"precondition": {"questionid": 6, "answerid": 99},
 		"title": "What other arrangements?"
 	},
 	{
-		"uuid": "", "questionid": 8, "type": "option",
+		"uuid": "b98c7dbd-de67-4ee4-8d86-45989511b1d6", "questionid": 8, "type": "option",
 		"precondition": { "questionid": 1, "answerid": 1 },
 		"title": "Will you be using a workflow for data integration, e.g. with tools for database access or conversion?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "7623d103-5bd6-4407-81b0-aa6c7f0cbc48", "id": 0, "label": "No" },
+			{ "uuid": "eade1627-7100-413e-8330-32b186d70fd7", "id": 1, "label": "Yes" }
 		],
 		"references":
 		[
-			{ "uuid": "", "type": "dmpbook", "chapter": "5.3" },
-			{ "uuid": "", "type": "resourcepage", "shortuid": "qqb" }
+			{ "uuid": "d3d63615-17d5-4eb4-9587-9e47d18fe2fd", "type": "dmpbook", "chapter": "5.3" },
+			{ "uuid": "6b66bb08-19a3-473c-9014-492bf0b42251", "type": "resourcepage", "shortuid": "qqb" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 9, "type": "option",
+		"uuid": "ff85db18-565c-4177-a397-9a8cf4c7b374", "questionid": 9, "type": "option",
 		"precondition": { "questionid": 1, "answerid": 1 },
 		"title": "Will you use a 'linked data' approach?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "01aaaf8a-ee94-4cd0-8e36-adcb7ac9d18d", "id": 0, "label": "No" },
+			{ "uuid": "9cea7792-3e4c-42a6-b7e0-1abbdc9e2a5b", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 10, "type": "option",
+		"uuid": "811965f0-b1b7-4b4b-92a6-01cd83b08fa2", "questionid": 10, "type": "option",
 		"precondition": { "questionid": 9, "answerid": 1 },
 		"title": "Are your data sources using linked data?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Partly" },
-			{ "uuid": "", "id": 2, "label": "Yes" }
+			{ "uuid": "d2ae9b5f-db3f-4b9e-8e06-723f82ca4c2e", "id": 0, "label": "No" },
+			{ "uuid": "395c9651-9d92-48f7-b1fc-cdccbd681f57", "id": 1, "label": "Partly" },
+			{ "uuid": "054125ff-7968-4c48-9359-0192042037a5", "id": 2, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 11, "type": "option",
+		"uuid": "fad678c7-99e4-48e2-a708-fe0dfa1381b8", "questionid": 11, "type": "option",
 		"precondition": { "questionid": 9, "answerid": 1 },
 		"title": "Will you provide your results as semantically interoperable linked data?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "fb400dcd-28f2-4577-ba3e-e588d8307e07", "id": 0, "label": "No" },
+			{ "uuid": "d17db5ee-275f-4783-8340-c89bc130c86f", "id": 1, "label": "Yes" }
 		],
 		"references":
 		[
-			{ "uuid": "", "type": "dmpbook", "chapter": "5.2" },
-			{ "uuid": "", "type": "resourcepage", "shortuid": "fxm" }
+			{ "uuid": "8946bf81-5eec-44fe-9e36-f2163ae43c2f", "type": "dmpbook", "chapter": "5.2" },
+			{ "uuid": "257cb8f8-b931-49dd-a6ab-f54e223fb8c6", "type": "resourcepage", "shortuid": "fxm" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 2, "type": "option",
+		"uuid": "7733494c-fd84-4cd0-8463-5806f321f2c9", "questionid": 2, "type": "option",
 		"title": "Will you be using common or exchangeable units?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "83883ae4-6c04-44af-a1a0-db5ee5a1b412", "id": 0, "label": "No" },
+			{ "uuid": "e2759b73-a0c6-4b49-b628-52a3e87605f0", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 3, "type": "option",
+		"uuid": "f67e1539-5c7d-4df7-8259-e4f2edfa2685", "questionid": 3, "type": "option",
 		"title": "Will you be using common ontologies?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes", "advice": "Choose the ontologies before you start" }
+			{ "uuid": "b497f330-91a0-44c9-990d-3d3e02d380b4", "id": 0, "label": "No" },
+			{ "uuid": "3e5ef321-76f3-4c65-a49f-4e03f6a23def", "id": 1, "label": "Yes", "advice": "Choose the ontologies before you start" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 4, "type": "option",
+		"uuid": "d0306914-c253-472c-869f-19a60578c087", "questionid": 4, "type": "option",
 		"title": "Will there be potential issues with statistical normalization?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "6332fd3a-6b3b-4db6-a5bf-f108f5c19801", "id": 0, "label": "No" },
+			{ "uuid": "49ad2eca-b88d-4fd8-b210-5bec6fffb283", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 12, "type": "option",
+		"uuid": "dbb6dcdf-dd2e-4829-8c03-16b2339ebd5a", "questionid": 12, "type": "option",
 		"title": "Will you be integrating different data sources to get more samples or more data points?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "d59b9031-78e7-4d37-a667-1aeb94522213", "id": 0, "label": "No" },
+			{ "uuid": "493b4264-185d-413e-83f8-d424c50768b9", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 14, "type": "option",
+		"uuid": "18f9b8ec-bf1b-4035-8eac-3fd329613a7c", "questionid": 14, "type": "option",
 		"precondition": { "questionid": 12, "answerid": 1 },
 		"title": "Have these been collected with sufficiently identical protocols?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "e902668c-d033-4720-a3a7-a7694731bff0", "id": 0, "label": "No" },
+			{ "uuid": "cce50ae0-08ff-43f3-835c-a494d5a56222", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 13, "type": "option",
+		"uuid": "d5d21ad3-720c-4a6a-bd5a-09f14b15666f", "questionid": 13, "type": "option",
 		"title": "Will you be integrating different data sources in order to get more information for each sample or data point?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "4ba2c122-b948-4e41-9e48-6e052e2dc77e", "id": 0, "label": "No" },
+			{ "uuid": "61d05101-2eaa-4ebb-8be7-2fcac50f2fb2", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 15, "type": "option",
+		"uuid": "63b020de-664a-4271-807c-a6f4361d6439", "questionid": 15, "type": "option",
 		"precondition": { "questionid": 13, "answerid": 1 },
 		"title": "Did you already select the variables on which you will join the data sets?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "176cf769-81db-4298-bfae-c1e96e8bbecf", "id": 0, "label": "No" },
+			{ "uuid": "f8f49bdc-670b-495f-9a4b-5300db71cfe2", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 16, "type": "option",
+		"uuid": "c6fdeacb-4a1f-4948-988a-0c6458cdf7b9", "questionid": 16, "type": "option",
 		"precondition": { "questionid": 13, "answerid": 1 },
 		"title": "Will you make sure that you do not inadvertently create a biased subset?",
 		"text": "Some parameters you select on may have been collected only for a subset of the subjects or data points. An obvious example is if you match on secondary education type, you will bias to people over 18 years old because younger people do not have this field. In many cases the selection bias may be a lot less obvious and special measures exist to verify that the diversity of the sample is not reduced by the integration step.",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "0cf3e92f-4cdf-4446-b2c6-1801338ec432", "id": 0, "label": "No" },
+			{ "uuid": "26f64599-467a-4339-a971-74ac638f4c37", "id": 1, "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 17, "type": "option",
+		"uuid": "6b3d62a5-1d4d-49e1-aaf1-0a8b398a7ac3", "questionid": 17, "type": "option",
 		"precondition": { "questionid": 13, "answerid": 1 },
 		"title": "Could the coupling of data create a danger of re-identification of anonymized privacy sensitive data?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes", "advice": "Plan either preventative or corrective measures" }
+			{ "uuid": "04fe8749-82a5-4b06-a7f8-58e634e5cd86", "id": 0, "label": "No" },
+			{ "uuid": "aad55658-91c1-4fb8-8869-c0dc1b02b96d", "id": 1, "label": "Yes", "advice": "Plan either preventative or corrective measures" }
 		]
 	},
 	{
-		"uuid": "", "questionid": 18, "type": "option",
+		"uuid": "15eb6fe6-7b21-493b-a5a0-09ac63212ab6", "questionid": 18, "type": "option",
 		"precondition": { "questionid": 13, "answerid": 1 },
 		"title": "Did you make a conscious decision to be either accurate or complete?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "46ec2d2b-d1c2-44cd-8a99-2866f65349d2", "id": 0, "label": "No" },
+			{ "uuid": "ff4b9f47-39f4-436f-89bf-910dda950380", "id": 1, "label": "Yes" }
 		]
 	},
 
 	{
-		"uuid": "", "questionid": 5, "type": "option",
+		"uuid": "dc4f1dc7-4608-45f9-8503-aa05536f4d97", "questionid": 5, "type": "option",
 		"title": "Do you have all tools to couple the necessary data types?",
 		"answers":
 		[
-			{ "uuid": "", "id": 0, "label": "No" },
-			{ "uuid": "", "id": 1, "label": "Yes" }
+			{ "uuid": "45169011-2336-4eb4-8026-fa7fa9ca9649", "id": 0, "label": "No" },
+			{ "uuid": "fa0f8ecf-9cd5-4395-9228-0aeca4339ea4", "id": 1, "label": "Yes" }
 		]
 	}
 	]
