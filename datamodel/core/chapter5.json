@@ -1,187 +1,196 @@
 {
-    "chapterid": 5,
-    "namespace": "core",
-    "formatversion": 1,
-    "title": "Data integration",
-    "questions" :
-    [
+	"uuid": "83438863-0aa0-4458-b14b-2b2c0d4f811d",
+	"chapterid": 5,
+	"namespace": "core",
+	"formatversion": 1,
+	"title": "Data integration",
+	"questions" :
+	[
 	{
-	    "questionid": 1, "type": "option",
-	    "title": "How will you be doing the integration of different data sources?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "This as been taken care of" },
-		{   "id": 1, "label": "Explore this with additional questions" }
-	    ]
+		"uuid": "", "questionid": 1, "type": "option",
+		"title": "How will you be doing the integration of different data sources?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "This as been taken care of" },
+			{ "uuid": "", "id": 1, "label": "Explore this with additional questions" }
+		]
 	},
 	{
-	    "questionid": 6, "type": "option",
-	    "precondition": { "questionid": 1, "answerid": 1 },
-	    "title": "What kind of framework will you use?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "Spreadsheets like Microsoft Excel" },
-		{   "id": 1, "label": "A regular tabular database" },
-		{   "id": 2, "label": "A graph database" },
-		{   "id": 3, "label": "RDF" },
-		{   "id": 4, "label": "(meta)data fields in a domain specific file" },
-		{   "id": 98, "label": "A combination of the above" },
-		{   "id": 99, "label": "We have made other arrangements" }
-	    ]
+		"uuid": "", "questionid": 6, "type": "option",
+		"precondition": { "questionid": 1, "answerid": 1 },
+		"title": "What kind of framework will you use?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "Spreadsheets like Microsoft Excel" },
+			{ "uuid": "", "id": 1, "label": "A regular tabular database" },
+			{ "uuid": "", "id": 2, "label": "A graph database" },
+			{ "uuid": "", "id": 3, "label": "RDF" },
+			{ "uuid": "", "id": 4, "label": "(meta)data fields in a domain specific file" },
+			{ "uuid": "", "id": 98, "label": "A combination of the above" },
+			{ "uuid": "", "id": 99, "label": "We have made other arrangements" }
+		]
 	},
 	{
-	    "questionid": 7, "type": "text",
-	    "precondition": {"questionid": 6, "answerid": 99},
-	    "title": "What other arrangements?"
+		"uuid": "", "questionid": 7, "type": "text",
+		"precondition": {"questionid": 6, "answerid": 99},
+		"title": "What other arrangements?"
 	},
 	{
-	    "questionid": 8, "type": "option",
-	    "precondition": { "questionid": 1, "answerid": 1 },
-	    "title": "Will you be using a workflow for data integration, e.g. with tools for database access or conversion?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ],
-            "references": [{ "type": "dmpbook", "chapter": "5.3" }, {"type": "resourcepage", "shortuid": "qqb"}]
+		"uuid": "", "questionid": 8, "type": "option",
+		"precondition": { "questionid": 1, "answerid": 1 },
+		"title": "Will you be using a workflow for data integration, e.g. with tools for database access or conversion?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		],
+		"references":
+		[
+			{ "uuid": "", "type": "dmpbook", "chapter": "5.3" },
+			{ "uuid": "", "type": "resourcepage", "shortuid": "qqb" }
+		]
 	},
 	{
-	    "questionid": 9, "type": "option",
-	    "precondition": { "questionid": 1, "answerid": 1 },
-	    "title": "Will you use a 'linked data' approach?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 9, "type": "option",
+		"precondition": { "questionid": 1, "answerid": 1 },
+		"title": "Will you use a 'linked data' approach?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 10, "type": "option",
-	    "precondition": { "questionid": 9, "answerid": 1 },
-	    "title": "Are your data sources using linked data?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Partly" },
-		{   "id": 2, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 10, "type": "option",
+		"precondition": { "questionid": 9, "answerid": 1 },
+		"title": "Are your data sources using linked data?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Partly" },
+			{ "uuid": "", "id": 2, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 11, "type": "option",
-	    "precondition": { "questionid": 9, "answerid": 1 },
-	    "title": "Will you provide your results as semantically interoperable linked data?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ],
-            "references": [{ "type": "dmpbook", "chapter": "5.2" }, {"type": "resourcepage", "shortuid": "fxm"}]
+		"uuid": "", "questionid": 11, "type": "option",
+		"precondition": { "questionid": 9, "answerid": 1 },
+		"title": "Will you provide your results as semantically interoperable linked data?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		],
+		"references":
+		[
+			{ "uuid": "", "type": "dmpbook", "chapter": "5.2" },
+			{ "uuid": "", "type": "resourcepage", "shortuid": "fxm" }
+		]
 	},
 	{
-	    "questionid": 2, "type": "option",
-	    "title": "Will you be using common or exchangeable units?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 2, "type": "option",
+		"title": "Will you be using common or exchangeable units?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 3, "type": "option",
-	    "title": "Will you be using common ontologies?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes", "advice": "Choose the ontologies before you start" }
-	    ]
+		"uuid": "", "questionid": 3, "type": "option",
+		"title": "Will you be using common ontologies?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes", "advice": "Choose the ontologies before you start" }
+		]
 	},
 	{
-	    "questionid": 4, "type": "option",
-	    "title": "Will there be potential issues with statistical normalization?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 4, "type": "option",
+		"title": "Will there be potential issues with statistical normalization?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 12, "type": "option",
-	    "title": "Will you be integrating different data sources to get more samples or more data points?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 12, "type": "option",
+		"title": "Will you be integrating different data sources to get more samples or more data points?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 14, "type": "option",
-	    "precondition": { "questionid": 12, "answerid": 1 },
-	    "title": "Have these been collected with sufficiently identical protocols?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 14, "type": "option",
+		"precondition": { "questionid": 12, "answerid": 1 },
+		"title": "Have these been collected with sufficiently identical protocols?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 13, "type": "option",
-	    "title": "Will you be integrating different data sources in order to get more information for each sample or data point?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 13, "type": "option",
+		"title": "Will you be integrating different data sources in order to get more information for each sample or data point?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 15, "type": "option",
-	    "precondition": { "questionid": 13, "answerid": 1 },
-	    "title": "Did you already select the variables on which you will join the data sets?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 15, "type": "option",
+		"precondition": { "questionid": 13, "answerid": 1 },
+		"title": "Did you already select the variables on which you will join the data sets?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 16, "type": "option",
-	    "precondition": { "questionid": 13, "answerid": 1 },
-	    "title": "Will you make sure that you do not inadvertently create a biased subset?",
-	    "text": "Some parameters you select on may have been collected only for a subset of the subjects or data points. An obvious example is if you match on secondary education type, you will bias to people over 18 years old because younger people do not have this field. In many cases the selection bias may be a lot less obvious and special measures exist to verify that the diversity of the sample is not reduced by the integration step.",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 16, "type": "option",
+		"precondition": { "questionid": 13, "answerid": 1 },
+		"title": "Will you make sure that you do not inadvertently create a biased subset?",
+		"text": "Some parameters you select on may have been collected only for a subset of the subjects or data points. An obvious example is if you match on secondary education type, you will bias to people over 18 years old because younger people do not have this field. In many cases the selection bias may be a lot less obvious and special measures exist to verify that the diversity of the sample is not reduced by the integration step.",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 17, "type": "option",
-	    "precondition": { "questionid": 13, "answerid": 1 },
-	    "title": "Could the coupling of data create a danger of re-identification of anonymized privacy sensitive data?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes", "advice": "Plan either preventative or corrective measures" }
-	    ]
+		"uuid": "", "questionid": 17, "type": "option",
+		"precondition": { "questionid": 13, "answerid": 1 },
+		"title": "Could the coupling of data create a danger of re-identification of anonymized privacy sensitive data?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes", "advice": "Plan either preventative or corrective measures" }
+		]
 	},
 	{
-	    "questionid": 18, "type": "option",
-	    "precondition": { "questionid": 13, "answerid": 1 },
-	    "title": "Did you make a conscious decision to be either accurate or complete?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 18, "type": "option",
+		"precondition": { "questionid": 13, "answerid": 1 },
+		"title": "Did you make a conscious decision to be either accurate or complete?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
-	
+
 	{
-	    "questionid": 5, "type": "option",
-	    "title": "Do you have all tools to couple the necessary data types?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 5, "type": "option",
+		"title": "Do you have all tools to couple the necessary data types?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	}
-    ]
+	]
 }

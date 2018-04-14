@@ -1,15 +1,16 @@
 {
-    "chapterid": 1,
-    "namespace": "elixir-nl",
-    "formatversion": 1,
-    "questions":
-    [
+	"uuid": "82fd0cce-2b41-423f-92ad-636d0872045c",
+	"chapterid": 1,
+	"namespace": "elixir-nl",
+	"formatversion": 1,
+	"questions":
+	[
 	{
-	    "questionid" : 1, "namespace": "core",
-	    "experts" : [
-		{ "name": "Barend Mons",
-		  "email": "barend.mons@dtls.nl"}]
+		"uuid": "", "questionid" : 1, "namespace": "core",
+		"experts" :
+		[
+			{ "uuid": "", "name": "Barend Mons", "email": "barend.mons@dtls.nl"}
+		]
 	}
-    ]
+	]
 }
- 

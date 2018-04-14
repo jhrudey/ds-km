@@ -1,77 +1,78 @@
 {
-    "chapterid": 1,
-    "namespace": "lifesciences",
-    "formatversion": 1,
-    "questions" :
-    [
+	"uuid": "82fd0cce-2b41-423f-92ad-636d0872045c",
+	"chapterid": 1,
+	"namespace": "lifesciences",
+	"formatversion": 1,
+	"questions" :
+	[
 	{
-	    "questionid": 42, "type": "option",
-	    "precondition": { "questionid": 2, "namespace": "core", "answerid": 1 },
-	    "title": "Will you couple existing (biobank) data sets?",
-	    "answers":
-	    [
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes"}
-	    ]
+		"uuid": "", "questionid": 42, "type": "option",
+		"precondition": { "questionid": 2, "namespace": "core", "answerid": 1 },
+		"title": "Will you couple existing (biobank) data sets?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 43, "type": "option",
-	    "precondition": { "questionid": 42, "answerid": 1 },
-	    "title": "Will you use deterministic couplings?",
-	    "text": "Data sets that have exactly identical fields that are well filled can be coupled using deterministic methods. Will you be using such methods?",
-	    "answers":
-	    [
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 43, "type": "option",
+		"precondition": { "questionid": 42, "answerid": 1 },
+		"title": "Will you use deterministic couplings?",
+		"text": "Data sets that have exactly identical fields that are well filled can be coupled using deterministic methods. Will you be using such methods?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 44, "type": "text",
-	    "precondition": { "questionid": 42, "answerid": 1 },
-	    "title": "Will you be using a trusted third party for coupling?",
-	    "text": "What will be the procedure that is followed? Where will what data be sent? Did a legal advisor look at the procedures?"
+		"uuid": "", "questionid": 44, "type": "text",
+		"precondition": { "questionid": 42, "answerid": 1 },
+		"title": "Will you be using a trusted third party for coupling?",
+		"text": "What will be the procedure that is followed? Where will what data be sent? Did a legal advisor look at the procedures?"
 	},
 	{
-	    "questionid": 45, "type": "option",
-	    "precondition": { "questionid": 42, "answerid": 1 },
-	    "title": "Is consent available for the couplings?",
-	    "answers":
-	    [
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 45, "type": "option",
+		"precondition": { "questionid": 42, "answerid": 1 },
+		"title": "Is consent available for the couplings?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 46, "type": "text",
-	    "precondition": { "questionid": 42, "answerid": 1 },
-	    "title": "How will you check whether your coupled data are representative of your goal population?",
-	    "text": "Sometimes, through the nature of the data sets that are coupled, the coupled set is no longer representative for the whole population (e.g. some fields may only have been filled for people with high blood pressure). This can disturb your research if undetected. How will you make sure this is not happening?"
+		"uuid": "", "questionid": 46, "type": "text",
+		"precondition": { "questionid": 42, "answerid": 1 },
+		"title": "How will you check whether your coupled data are representative of your goal population?",
+		"text": "Sometimes, through the nature of the data sets that are coupled, the coupled set is no longer representative for the whole population (e.g. some fields may only have been filled for people with high blood pressure). This can disturb your research if undetected. How will you make sure this is not happening?"
 	},
 	{
-	    "questionid": 47, "type": "option",
-	    "precondition": { "questionid": 42, "answerid": 1 },
-	    "title": "What is the goal of the coupling?",
-	    "answers":
-	    [
-		{   "id": 0, "label": "More data about the same subjects (intersection)" },
-		{   "id": 1, "label": "Enlarging the group of subjects (union)"}
-	    ]
+		"uuid": "", "questionid": 47, "type": "option",
+		"precondition": { "questionid": 42, "answerid": 1 },
+		"title": "What is the goal of the coupling?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "More data about the same subjects (intersection)" },
+			{ "uuid": "", "id": 1, "label": "Enlarging the group of subjects (union)" }
+		]
 	},
 	{
-	    "questionid": 48, "type": "text",
-	    "precondition": { "questionid": 42, "answerid": 1 },
-	    "title": "What variable(s) will you be using for the coupling?"
+		"uuid": "", "questionid": 48, "type": "text",
+		"precondition": { "questionid": 42, "answerid": 1 },
+		"title": "What variable(s) will you be using for the coupling?"
 	},
 	{
-	    "questionid": 49, "type": "option",
-	    "precondition": { "questionid": 42, "answerid": 1 },
-	    "title": "Will you use probabilistic couplings?",
-	    "text": "Data sets that have similar but not identical fields or with identical fields that are not consistently filled can be coupled using probabilistic methods. Will you be using such methods?",
-	    "answers":
-	    [
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 49, "type": "option",
+		"precondition": { "questionid": 42, "answerid": 1 },
+		"title": "Will you use probabilistic couplings?",
+		"text": "Data sets that have similar but not identical fields or with identical fields that are not consistently filled can be coupled using probabilistic methods. Will you be using such methods?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	}
-    ]
+	]
 }

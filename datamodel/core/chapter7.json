@@ -1,495 +1,512 @@
 {
-    "chapterid": 7,
-    "namespace": "core",
-    "formatversion": 1,
-    "title": "Information and insight",
-    "questions" :
-    [
+	"uuid": "6be88f7c-f868-460f-bba7-91e1c659adfd",
+	"chapterid": 7,
+	"namespace": "core",
+	"formatversion": 1,
+	"title": "Information and insight",
+	"questions" :
+	[
 	{
-	    "questionid": 1, "type": "option",
-	    "title": "Will you be working with the philosophy 'as open as possible' for your data?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No", "advice": "You will need to explain!" },
-		{   "id": 1, "label": "Yes" }
-	    ],
-            "references": [{"type": "dmpbook", "chapter": "7.1" }, {"type": "resourcepage", "shortuid": "jvm"}]
+		"uuid": "", "questionid": 1, "type": "option",
+		"title": "Will you be working with the philosophy 'as open as possible' for your data?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No", "advice": "You will need to explain!" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		],
+		"references":
+		[
+			{ "uuid": "", "type": "dmpbook", "chapter": "7.1" },
+			{ "uuid": "", "type": "resourcepage", "shortuid": "jvm" }
+		]
 	},
 	{
-	    "questionid": 25, "type": "option",
-	    "title": "Cal all of your data become completely open immediately?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 25, "type": "option",
+		"title": "Cal all of your data become completely open immediately?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 2, "type": "option",
-	    "precondition": { "questionid": 25, "answerid": 0 },
-	    "title": " Are there legal reasons why (some of your) data can not be completely open?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 2, "type": "option",
+		"precondition": { "questionid": 25, "answerid": 0 },
+		"title": " Are there legal reasons why (some of your) data can not be completely open?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 7, "type": "option",
-	    "precondition": { "questionid": 2, "answerid": 1 },
-	    "title": "Are there privacy reasons why your data can not be open?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 7, "type": "option",
+		"precondition": { "questionid": 2, "answerid": 1 },
+		"title": "Are there privacy reasons why your data can not be open?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 10, "type": "option",
-	    "precondition": { "questionid": 7, "answerid": 1 },
-	    "title": "Are there restrictions on where the data need to be stored?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes, they must stay in the EU" },
-		{   "id": 2, "label": "Yes, they must stay in the same country" },
-		{   "id": 3, "label": "Yes, they must stay in the same institute" }
-	    ]
+		"uuid": "", "questionid": 10, "type": "option",
+		"precondition": { "questionid": 7, "answerid": 1 },
+		"title": "Are there restrictions on where the data need to be stored?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes, they must stay in the EU" },
+			{ "uuid": "", "id": 2, "label": "Yes, they must stay in the same country" },
+			{ "uuid": "", "id": 3, "label": "Yes, they must stay in the same institute" }
+		]
 	},
 	{
-	    "questionid": 11, "type": "option",
-	    "precondition": { "questionid": 7, "answerid": 1 },
-	    "title": "Could pseudonymization be used to make the data more openly available?",
-	    "text": "Legally, pseudonymous data (which means that someone has the key to reverse the process) is still considered privacy sensitive information. However, the EU is working on special cases where the data can still be opened as long as the key availability is sufficiently limited.",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes"}
-	    ]
+		"uuid": "", "questionid": 11, "type": "option",
+		"precondition": { "questionid": 7, "answerid": 1 },
+		"title": "Could pseudonymization be used to make the data more openly available?",
+		"text": "Legally, pseudonymous data (which means that someone has the key to reverse the process) is still considered privacy sensitive information. However, the EU is working on special cases where the data can still be opened as long as the key availability is sufficiently limited.",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes"}
+		]
 	},
 	{
-	    "questionid": 12, "type": "option",
-	    "precondition": { "questionid": 11, "answerid": 1 },
-	    "title": "Can you make use of an existing 'trusted third party' for pseudonymization?",
-	    "text": "Making use of the same pseudonymization for different studies makes it possible to integrate information later. Obviously it also raises the risk of re-identification",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes"}
-	    ]
+		"uuid": "", "questionid": 12, "type": "option",
+		"precondition": { "questionid": 11, "answerid": 1 },
+		"title": "Can you make use of an existing 'trusted third party' for pseudonymization?",
+		"text": "Making use of the same pseudonymization for different studies makes it possible to integrate information later. Obviously it also raises the risk of re-identification",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes"}
+		]
 	},
 	{
-	    "questionid": 13, "type": "option",
-	    "precondition": { "questionid": 7, "answerid": 1 },
-	    "title": "Could anonymization be used to make the data more openly available?",
-	    "text": "Different anonymization techniques exist. Disadvantage of anonymization is that data integration becomes virtually impossible, but it may be the only way to open up your data for other research",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes"}
-	    ]
-	},	
-	{
-	    "questionid": 14, "type": "option",
-	    "precondition": { "questionid": 7, "answerid": 1 },
-	    "title": "Could you use data aggregation to make the data openly available?",
-	    "text": "Aggregated data, where typically at least 15 individuals are in any data point, are considered sufficiently anonymous. This is an alternative way of making data openly available for future research",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes"}
-	    ]
-	},	
-	{
-	    "questionid": 8, "type": "option",
-	    "precondition": { "questionid": 2, "answerid": 1 },
-	    "title": "Are there IP reasons why your data can not be open?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 13, "type": "option",
+		"precondition": { "questionid": 7, "answerid": 1 },
+		"title": "Could anonymization be used to make the data more openly available?",
+		"text": "Different anonymization techniques exist. Disadvantage of anonymization is that data integration becomes virtually impossible, but it may be the only way to open up your data for other research",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes"}
+		]
 	},
 	{
-	    "questionid": 15, "type": "option",
-	    "precondition": { "questionid": 8, "answerid": 1 },
-	    "title": "Is it clear who owns data and documents?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes"}
-	    ]
-	},	
-	{
-	    "questionid": 16, "type": "option",
-	    "precondition": { "questionid": 8, "answerid": 1 },
-	    "title": "Will someone be given decision power to move documents or data to a new place after the project has finished?",
-	    "text": "In one case in the past, all documents that had been assembled by a project in a documentation system had to be deleted because not a single person could decide to move them to a new platform when the documentation system was going off-line.",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes"}
-	    ]
-	},	
-	{
-	    "questionid": 9, "type": "option",
-	    "precondition": { "questionid": 2, "answerid": 1 },
-	    "title": "Will you be allowing authenticated access to the data?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 14, "type": "option",
+		"precondition": { "questionid": 7, "answerid": 1 },
+		"title": "Could you use data aggregation to make the data openly available?",
+		"text": "Aggregated data, where typically at least 15 individuals are in any data point, are considered sufficiently anonymous. This is an alternative way of making data openly available for future research",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes"}
+		]
 	},
 	{
-	    "questionid": 17, "type": "option",
-	    "precondition": { "questionid": 9, "answerid": 1 },
-	    "title": "Where will the data be stored?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "In a domain repository (like EBI's EGA) that arranges restricted access" },
-		{   "id": 1, "label": "In a national or institutional repository that arranges restricted access" },
-		{   "id": 2, "label": "In a dedicated repository", "advice": "make sure you can guarantee longevity of this repository!" }
-	    ]
-	},	
-	{
-	    "questionid": 18, "type": "option",
-	    "precondition": { "questionid": 9, "answerid": 1 },
-	    "title": "Who will take care of authentication of potential users?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "We will use username/password authentication, possibly augmented with two-factor security" },
-		{   "id": 1, "label": "We will use a single sign-on system such as edugain" },
-		{   "id": 2, "label": "We will make other arrangements" }
-	    ]
+		"uuid": "", "questionid": 8, "type": "option",
+		"precondition": { "questionid": 2, "answerid": 1 },
+		"title": "Are there IP reasons why your data can not be open?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 19, "type": "text",
-	    "precondition": {"questionid": 18, "answerid": 2},
-	    "title": "What other arrangements?"
+		"uuid": "", "questionid": 15, "type": "option",
+		"precondition": { "questionid": 8, "answerid": 1 },
+		"title": "Is it clear who owns data and documents?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes"}
+		]
 	},
 	{
-	    "questionid": 20, "type": "option",
-	    "precondition": { "questionid": 9, "answerid": 1 },
-	    "title": "Who will take care of authorization of potential users?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "One of the project members will authorize", "advice" : "It is not a good idea to tie this to a person" },
-		{   "id": 1, "label": "We will set up a data access committee" },
-		{   "id": 2, "label": "We will make use of an existing data access committee" },
-		{   "id": 3, "label": "We will make other arrangements" }
-	    ]
+		"uuid": "", "questionid": 16, "type": "option",
+		"precondition": { "questionid": 8, "answerid": 1 },
+		"title": "Will someone be given decision power to move documents or data to a new place after the project has finished?",
+		"text": "In one case in the past, all documents that had been assembled by a project in a documentation system had to be deleted because not a single person could decide to move them to a new platform when the documentation system was going off-line.",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes"}
+		]
 	},
 	{
-	    "questionid": 21, "type": "text",
-	    "precondition": {"questionid": 20, "answerid": 2},
-	    "title": "Which existing Data Access Committee?"
+		"uuid": "", "questionid": 9, "type": "option",
+		"precondition": { "questionid": 2, "answerid": 1 },
+		"title": "Will you be allowing authenticated access to the data?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 22, "type": "text",
-	    "precondition": {"questionid": 20, "answerid": 3},
-	    "title": "What other arrangements?"
+		"uuid": "", "questionid": 17, "type": "option",
+		"precondition": { "questionid": 9, "answerid": 1 },
+		"title": "Where will the data be stored?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "In a domain repository (like EBI's EGA) that arranges restricted access" },
+			{ "uuid": "", "id": 1, "label": "In a national or institutional repository that arranges restricted access" },
+			{ "uuid": "", "id": 2, "label": "In a dedicated repository", "advice": "make sure you can guarantee longevity of this repository!" }
+		]
 	},
 	{
-	    "questionid": 23, "type": "option",
-	    "precondition": { "questionid": 9, "answerid": 1 },
-	    "title": "Are the criteria for application to access the data openly available?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 18, "type": "option",
+		"precondition": { "questionid": 9, "answerid": 1 },
+		"title": "Who will take care of authentication of potential users?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "We will use username/password authentication, possibly augmented with two-factor security" },
+			{ "uuid": "", "id": 1, "label": "We will use a single sign-on system such as edugain" },
+			{ "uuid": "", "id": 2, "label": "We will make other arrangements" }
+		]
 	},
 	{
-	    "questionid": 24, "type": "option",
-	    "precondition": { "questionid": 9, "answerid": 1 },
-	    "title": "Has auditing for the re-use been arranged?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 19, "type": "text",
+		"precondition": {"questionid": 18, "answerid": 2},
+		"title": "What other arrangements?"
 	},
 	{
-	    "questionid": 3, "type": "option",
-	    "precondition": { "questionid": 25, "answerid": 0 },
-	    "title": "Are there business reasons why (some of your) data can not be completely open?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes, patents still need to be applied for" },
-		{   "id": 2, "label": "Yes, other business reasons" }
-	    ]
+		"uuid": "", "questionid": 20, "type": "option",
+		"precondition": { "questionid": 9, "answerid": 1 },
+		"title": "Who will take care of authorization of potential users?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "One of the project members will authorize", "advice" : "It is not a good idea to tie this to a person" },
+			{ "uuid": "", "id": 1, "label": "We will set up a data access committee" },
+			{ "uuid": "", "id": 2, "label": "We will make use of an existing data access committee" },
+			{ "uuid": "", "id": 3, "label": "We will make other arrangements" }
+		]
 	},
 	{
-	    "questionid": 26, "type": "text",
-	    "precondition": { "questionid": 3, "answerid": 2 },
-	    "title": "What other business reasons are there not to open all data immediately?"
+		"uuid": "", "questionid": 21, "type": "text",
+		"precondition": {"questionid": 20, "answerid": 2},
+		"title": "Which existing Data Access Committee?"
 	},
 	{
-	    "questionid": 27, "type": "option",
-	    "precondition": { "questionid": 25, "answerid": 0 },
-	    "title": "Are there other reasons why (some of your) data can not be completely open?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes, papers need to be submitted first" },
-		{   "id": 2, "label": "Yes, other reasons" }
-	    ]
+		"uuid": "", "questionid": 22, "type": "text",
+		"precondition": {"questionid": 20, "answerid": 3},
+		"title": "What other arrangements?"
 	},
 	{
-	    "questionid": 28, "type": "text",
-	    "precondition": { "questionid": 27, "answerid": 2 },
-	    "title": "What other reasons are there not to open all data immediately?"
+		"uuid": "", "questionid": 23, "type": "option",
+		"precondition": { "questionid": 9, "answerid": 1 },
+		"title": "Are the criteria for application to access the data openly available?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 29, "type": "option",
-	    "precondition": { "questionid": 25, "answerid": 0 },
-	    "title": "Will you use a limited embargo?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No, some restricted data will be embargoed indefinitely" },
-		{   "id": 1, "label": "No, data will be released only as soon as restrictions are falling away" },
-		{   "id": 2, "label": "Yes, data that is not legally restrained will be released after a fixed time period, unconditionally" }
-	    ]
+		"uuid": "", "questionid": 24, "type": "option",
+		"precondition": { "questionid": 9, "answerid": 1 },
+		"title": "Has auditing for the re-use been arranged?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 30, "type": "text",
-	    "precondition": { "questionid": 29, "answerid": 0 },
-	    "title": "What is the maximum embargo period?"
+		"uuid": "", "questionid": 3, "type": "option",
+		"precondition": { "questionid": 25, "answerid": 0 },
+		"title": "Are there business reasons why (some of your) data can not be completely open?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes, patents still need to be applied for" },
+			{ "uuid": "", "id": 2, "label": "Yes, other business reasons" }
+		]
 	},
 	{
-	    "questionid": 4, "type": "list",
-	    "title": "Specify a list of data sets you will be publishing",
-	    "text": "Specify a short name for each data set, sufficient for yourself to know what data it is about. It is useful to think about a data set as some collection of data that will be ending up in the same place."
+		"uuid": "", "questionid": 26, "type": "text",
+		"precondition": { "questionid": 3, "answerid": 2 },
+		"title": "What other business reasons are there not to open all data immediately?"
 	},
 	{
-	    "questionid": 31, "type": "option",
-	    "precondition": { "questionid": 4 },
-	    "title": "What kind of repository will this data be stored in?",
-	    "text": "Domain repositories often have the best functionality to make the data findable and reusable. Many of them are listed in https://fairsharing,org/",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "A domain-specific repository" },
-		{   "id": 1, "label": "Our national repository", "advice": "Disadvantage of a general purpose repository is the lack of data-specific features (e.g. 'play' instead of 'download' for an audio file) and limited findability" },
-		{   "id": 2, "label": "Our institutional repository", "advice": "Disadvantage of a general purpose repository is the lack of data-specific features (e.g. 'play' instead of 'download' for an audio file) and limited findability" },
-		{   "id": 3, "label": "A special-purpose repository for the project" }
-	    ],
-	    "references":
-	    [
-		{ "type": "url", "weblink": "https://fairsharing.org/", "anchor": "FAIRSharing" }
-	    ]
+		"uuid": "", "questionid": 27, "type": "option",
+		"precondition": { "questionid": 25, "answerid": 0 },
+		"title": "Are there other reasons why (some of your) data can not be completely open?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes, papers need to be submitted first" },
+			{ "uuid": "", "id": 2, "label": "Yes, other reasons" }
+		]
 	},
 	{
-	    "questionid": 32, "type": "option",
-	    "precondition": { "questionid": 31, "answerid": 3 },
-	    "title": "Will you be able to support this repository for a sufficiently long time?",
-	    "text": "Maintaining a repository is a long term commitment that can most of the time not be funded from project money. Think about who will be doing the system maintenance, hardware maintenance, and who will make necessary code changes to accommodate future (safe) versions of the system",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 28, "type": "text",
+		"precondition": { "questionid": 27, "answerid": 2 },
+		"title": "What other reasons are there not to open all data immediately?"
 	},
 	{
-	    "questionid": 38, "type": "option",
-	    "precondition": { "questionid": 31, "answerid": 3 },
-	    "title": "What is the service level you will be offering to users of the data?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "Download only", "advice": "That functionality level can surely be found in another place too!" },
-		{   "id": 1, "label": "A search and access interface" },
-		{   "id": 2, "label": "A processing service", "advice": "Make sure to budget sufficient compute resources for the users" }
-	    ],
-            "references": [{"type": "dmpbook", "chapter": "7.4.1" }, {"type": "resourcepage", "shortuid": "ivg"}]
+		"uuid": "", "questionid": 29, "type": "option",
+		"precondition": { "questionid": 25, "answerid": 0 },
+		"title": "Will you use a limited embargo?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No, some restricted data will be embargoed indefinitely" },
+			{ "uuid": "", "id": 1, "label": "No, data will be released only as soon as restrictions are falling away" },
+			{ "uuid": "", "id": 2, "label": "Yes, data that is not legally restrained will be released after a fixed time period, unconditionally" }
+		]
 	},
 	{
-	    "questionid": 39, "type": "option",
-	    "precondition": { "questionid": 31, "answerid": 3 },
-	    "title": "Did you arrange for system administration (at least security updates) and hardware maintenance for the server(s)?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 30, "type": "text",
+		"precondition": { "questionid": 29, "answerid": 0 },
+		"title": "What is the maximum embargo period?"
 	},
 	{
-	    "questionid": 33, "type": "text",
-	    "precondition": { "questionid": 31, "answerid": 0 },
-	    "title": "What repository?"
+		"uuid": "", "questionid": 4, "type": "list",
+		"title": "Specify a list of data sets you will be publishing",
+		"text": "Specify a short name for each data set, sufficient for yourself to know what data it is about. It is useful to think about a data set as some collection of data that will be ending up in the same place."
 	},
 	{
-	    "questionid": 36, "type": "option",
-	    "precondition": { "questionid": 31, "answerid": 0 },
-	    "title": "Will you contact the repository beforehand?",
-	    "text": "Contacting the repository early may be useful to establish conditions, formats, and metadata requirements for submission. It may also be necessary to establish whether the repository can accommodate your data",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No, this submission is routine both for us and the repository" },
-		{   "id": 1, "label": "Yes, we have contacted the repository" },
-		{   "id": 2, "label": "Yes, we will contact the repository" },
-		{   "id": 3, "label": "We have made other arrangements" }
-	    ]
+		"uuid": "", "questionid": 31, "type": "option",
+		"precondition": { "questionid": 4 },
+		"title": "What kind of repository will this data be stored in?",
+		"text": "Domain repositories often have the best functionality to make the data findable and reusable. Many of them are listed in https://fairsharing,org/",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "A domain-specific repository" },
+			{ "uuid": "", "id": 1, "label": "Our national repository", "advice": "Disadvantage of a general purpose repository is the lack of data-specific features (e.g. 'play' instead of 'download' for an audio file) and limited findability" },
+			{ "uuid": "", "id": 2, "label": "Our institutional repository", "advice": "Disadvantage of a general purpose repository is the lack of data-specific features (e.g. 'play' instead of 'download' for an audio file) and limited findability" },
+			{ "uuid": "", "id": 3, "label": "A special-purpose repository for the project" }
+		],
+		"references":
+		[
+			{ "uuid": "", "type": "url", "weblink": "https://fairsharing.org/", "anchor": "FAIRSharing" }
+		]
 	},
 	{
-	    "questionid": 37, "type": "text",
-	    "precondition": {"questionid": 36, "answerid": 3},
-	    "title": "What other arrangements?"
+		"uuid": "", "questionid": 32, "type": "option",
+		"precondition": { "questionid": 31, "answerid": 3 },
+		"title": "Will you be able to support this repository for a sufficiently long time?",
+		"text": "Maintaining a repository is a long term commitment that can most of the time not be funded from project money. Think about who will be doing the system maintenance, hardware maintenance, and who will make necessary code changes to accommodate future (safe) versions of the system",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 34, "type": "option",
-	    "precondition": { "questionid": 31, "answerid": 3 },
-	    "title": "What kind of service will your repository offer to users?",
-	    "text": "The amount of funding needed to maintain a repository is strongly dependent on the services offered",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "Find and download only" },
-		{   "id": 1, "label": "Search and advanced access" },
-		{   "id": 2, "label": "Anything including some data processing" }
-	    ]
+		"uuid": "", "questionid": 38, "type": "option",
+		"precondition": { "questionid": 31, "answerid": 3 },
+		"title": "What is the service level you will be offering to users of the data?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "Download only", "advice": "That functionality level can surely be found in another place too!" },
+			{ "uuid": "", "id": 1, "label": "A search and access interface" },
+			{ "uuid": "", "id": 2, "label": "A processing service", "advice": "Make sure to budget sufficient compute resources for the users" }
+		],
+		"references":
+		[
+			{ "uuid": "", "type": "dmpbook", "chapter": "7.4.1" },
+			{ "uuid": "", "type": "resourcepage", "shortuid": "ivg" }
+		]
 	},
 	{
-	    "questionid": 35, "type": "option",
-	    "precondition": { "questionid": 4 },
-	    "title": "Will you be adding a reference to the published data to at least one data catalogue?",
-	    "text": "Data is sometimes difficult to locate, especially if it is not in a domain-specific repository. Data catalogues may increase findability.",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 39, "type": "option",
+		"precondition": { "questionid": 31, "answerid": 3 },
+		"title": "Did you arrange for system administration (at least security updates) and hardware maintenance for the server(s)?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 40, "type": "option",
-	    "title": "Will you be making sure that blocks of data deposited in different repositories can be recognized as belonging to the same study?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes, all data sets will have links to the related data" },
-		{   "id": 2, "label": "Yes, all data sets will be linked from a single catalog entry" },
-		{   "id": 3, "label": "Yes, we have made other arrangements" }
-	    ]
+		"uuid": "", "questionid": 33, "type": "text",
+		"precondition": { "questionid": 31, "answerid": 0 },
+		"title": "What repository?"
 	},
 	{
-	    "questionid": 41, "type": "text",
-	    "precondition": {"questionid": 40, "answerid": 3},
-	    "title": "What other arrangements?"
+		"uuid": "", "questionid": 36, "type": "option",
+		"precondition": { "questionid": 31, "answerid": 0 },
+		"title": "Will you contact the repository beforehand?",
+		"text": "Contacting the repository early may be useful to establish conditions, formats, and metadata requirements for submission. It may also be necessary to establish whether the repository can accommodate your data",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No, this submission is routine both for us and the repository" },
+			{ "uuid": "", "id": 1, "label": "Yes, we have contacted the repository" },
+			{ "uuid": "", "id": 2, "label": "Yes, we will contact the repository" },
+			{ "uuid": "", "id": 3, "label": "We have made other arrangements" }
+		]
 	},
 	{
-	    "questionid": 5, "type": "option",
-	    "title": "Did you work out the financial aspects of making the data available?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "This as been taken care of" },
-		{   "id": 1, "label": "Explore this with additional questions" }
-	    ]
+		"uuid": "", "questionid": 37, "type": "text",
+		"precondition": {"questionid": 36, "answerid": 3},
+		"title": "What other arrangements?"
 	},
 	{
-	    "questionid": 42, "type": "option",
-	    "title": "Will your publications be open access?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes, this is budgeted in the project" },
-		{   "id": 2, "label": "Yes, our department/institute will pay for open access publishing" }
-	    ],
-            "references": [{"type": "dmpbook", "chapter": "7.2" }, {"type": "resourcepage", "shortuid": "mjf"}]
+		"uuid": "", "questionid": 34, "type": "option",
+		"precondition": { "questionid": 31, "answerid": 3 },
+		"title": "What kind of service will your repository offer to users?",
+		"text": "The amount of funding needed to maintain a repository is strongly dependent on the services offered",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "Find and download only" },
+			{ "uuid": "", "id": 1, "label": "Search and advanced access" },
+			{ "uuid": "", "id": 2, "label": "Anything including some data processing" }
+		]
 	},
 	{
-	    "questionid": 43, "type": "option",
-	    "title": "Are there any recurring fees to keep data or documents available?",
-	    "text": "Are you using any commercially licensed products to keep data, software or documents available, for which a regular fee must be paid?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes", "advice": "Make sure this will be kept running by the department or institute. It is best to also have a backup plan, being able to move data and documents to a different place if a service is discontinued. For this, you may need to arrange permission from all project partners beforehand." }
-	    ]
+		"uuid": "", "questionid": 35, "type": "option",
+		"precondition": { "questionid": 4 },
+		"title": "Will you be adding a reference to the published data to at least one data catalogue?",
+		"text": "Data is sometimes difficult to locate, especially if it is not in a domain-specific repository. Data catalogues may increase findability.",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	},
 	{
-	    "questionid": 6, "type": "option",
-	    "title": "Will you be archiving your data after the project in 'cold storage'?",
-	    "text": "Will you be storing (in cold storage) copies of your own data for a longer period after the project has ended? Possibly as a continuation of archival as part of data storage strategy during the project?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ],
-            "references": [{"type": "dmpbook", "chapter": "7.4.4" }, {"type": "resourcepage", "shortuid": "fxe"}]
+		"uuid": "", "questionid": 40, "type": "option",
+		"title": "Will you be making sure that blocks of data deposited in different repositories can be recognized as belonging to the same study?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes, all data sets will have links to the related data" },
+			{ "uuid": "", "id": 2, "label": "Yes, all data sets will be linked from a single catalog entry" },
+			{ "uuid": "", "id": 3, "label": "Yes, we have made other arrangements" }
+		]
 	},
 	{
-	    "questionid": 45, "type": "option",
-	    "precondition": { "questionid": 6, "answerid": 1 },
-	    "title": "Will data formats of data in cold storage be upgraded if they become obsolete?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 41, "type": "text",
+		"precondition": {"questionid": 40, "answerid": 3},
+		"title": "What other arrangements?"
 	},
 	{
-	    "questionid": 46, "type": "option",
-	    "precondition": { "questionid": 6, "answerid": 1 },
-	    "title": "Will data be migrated regularly to more modern storage media (e.g. newer tapes)?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 5, "type": "option",
+		"title": "Did you work out the financial aspects of making the data available?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "This as been taken care of" },
+			{ "uuid": "", "id": 1, "label": "Explore this with additional questions" }
+		]
 	},
 	{
-	    "questionid": 47, "type": "option",
-	    "title": "Will you also publish data if the results of your study are negative/inconclusive or unpublishable?",
-	    "text": "Even if you do not obtain the results you had foreseen from your own study, the data can still be valuable for reuse in another context. Also, publishing the data can avoid that someone else collects a similar data set with a similar negative result.",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
-	},	
-	{
-	    "questionid": 48, "type": "list",
-	    "title": "Specify a list of software packages you will be publishing",
-	    "text": "Specify a short name for each software package."
+		"uuid": "", "questionid": 42, "type": "option",
+		"title": "Will your publications be open access?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes, this is budgeted in the project" },
+			{ "uuid": "", "id": 2, "label": "Yes, our department/institute will pay for open access publishing" }
+		],
+		"references":
+		[
+			{ "uuid": "", "type": "dmpbook", "chapter": "7.2" },
+			{ "uuid": "", "type": "resourcepage", "shortuid": "mjf" }
+		]
 	},
 	{
-	    "questionid": 49, "type": "option",
-	    "precondition": { "questionid": 48 },
-	    "title": "Will you be adding a proper open-source license?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes, we have decided on an open source license" },
-		{   "id": 2, "label": "Yes, we will decide on an open source license" }
-	    ]
-	},	
-	{
-	    "questionid": 50, "type": "string",
-	    "precondition": { "questionid": 49, "answerid": 1 },
-	    "title": "What is the license?"
+		"uuid": "", "questionid": 43, "type": "option",
+		"title": "Are there any recurring fees to keep data or documents available?",
+		"text": "Are you using any commercially licensed products to keep data, software or documents available, for which a regular fee must be paid?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes", "advice": "Make sure this will be kept running by the department or institute. It is best to also have a backup plan, being able to move data and documents to a different place if a service is discontinued. For this, you may need to arrange permission from all project partners beforehand." }
+		]
 	},
 	{
-	    "questionid": 51, "type": "string",
-	    "precondition": { "questionid": 48 },
-	    "title": "Where will the software package be available?"
+		"uuid": "", "questionid": 6, "type": "option",
+		"title": "Will you be archiving your data after the project in 'cold storage'?",
+		"text": "Will you be storing (in cold storage) copies of your own data for a longer period after the project has ended? Possibly as a continuation of archival as part of data storage strategy during the project?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		],
+		"references":
+		[
+			{ "uuid": "", "type": "dmpbook", "chapter": "7.4.4" },
+			{ "uuid": "", "type": "resourcepage", "shortuid": "fxe" }
+		]
 	},
 	{
-	    "questionid": 52, "type": "option",
-	    "precondition": { "questionid": 48 },
-	    "title": "Will this software be listed in a catalogue?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
-	},	
+		"uuid": "", "questionid": 45, "type": "option",
+		"precondition": { "questionid": 6, "answerid": 1 },
+		"title": "Will data formats of data in cold storage be upgraded if they become obsolete?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
+	},
 	{
-	    "questionid": 53, "type": "option",
-	    "title": "Will there be planning of valorization or translational returns?",
-	    "answers": 
-	    [ 
-		{   "id": 0, "label": "No" },
-		{   "id": 1, "label": "Yes" }
-	    ]
+		"uuid": "", "questionid": 46, "type": "option",
+		"precondition": { "questionid": 6, "answerid": 1 },
+		"title": "Will data be migrated regularly to more modern storage media (e.g. newer tapes)?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
+	},
+	{
+		"uuid": "", "questionid": 47, "type": "option",
+		"title": "Will you also publish data if the results of your study are negative/inconclusive or unpublishable?",
+		"text": "Even if you do not obtain the results you had foreseen from your own study, the data can still be valuable for reuse in another context. Also, publishing the data can avoid that someone else collects a similar data set with a similar negative result.",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
+	},
+	{
+		"uuid": "", "questionid": 48, "type": "list",
+		"title": "Specify a list of software packages you will be publishing",
+		"text": "Specify a short name for each software package."
+	},
+	{
+		"uuid": "", "questionid": 49, "type": "option",
+		"precondition": { "questionid": 48 },
+		"title": "Will you be adding a proper open-source license?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes, we have decided on an open source license" },
+			{ "uuid": "", "id": 2, "label": "Yes, we will decide on an open source license" }
+		]
+	},
+	{
+		"uuid": "", "questionid": 50, "type": "string",
+		"precondition": { "questionid": 49, "answerid": 1 },
+		"title": "What is the license?"
+	},
+	{
+		"uuid": "", "questionid": 51, "type": "string",
+		"precondition": { "questionid": 48 },
+		"title": "Where will the software package be available?"
+	},
+	{
+		"uuid": "", "questionid": 52, "type": "option",
+		"precondition": { "questionid": 48 },
+		"title": "Will this software be listed in a catalogue?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
+	},
+	{
+		"uuid": "", "questionid": 53, "type": "option",
+		"title": "Will there be planning of valorization or translational returns?",
+		"answers":
+		[
+			{ "uuid": "", "id": 0, "label": "No" },
+			{ "uuid": "", "id": 1, "label": "Yes" }
+		]
 	}
-    ]
+	]
 }
