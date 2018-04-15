@@ -229,7 +229,7 @@
 		],
 		"references":
 		[
-			{ "uuid": "8c4142bd-f60c-4156-a2e2-18ce03193ac3", "type": "xref", "chapterid": 4, "questionid": 2 }
+			{ "uuid": "1991077f-04ae-4808-90a5-e4b2f82e30bf", "type": "xref", "chapterid": 4, "questionid": 2 }
 		]
 	},
 	{
@@ -558,7 +558,7 @@
 		],
 		"references":
 		[
-			{ "uuid": "219feb8b-3440-45b5-bc00-cba5f9e4e1b4", "type": "xref", "chapterid": 2, "questionid": 6 },
+			{ "uuid": "e87ef779-2c4b-4c0d-a1f1-821290123a3c", "type": "xref", "chapterid": 2, "questionid": 6 },
 			{ "uuid": "afc5ae15-69ef-4dd9-b701-eaa5dbb8fddb", "type": "dmpbook", "chapter": "2.7" },
 			{ "uuid": "cec4d69c-0a8b-4e0c-98c7-309d0c57d692", "type": "resourcepage", "shortuid": "wia" }
 		]
