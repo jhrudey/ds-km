@@ -37,30 +37,11 @@
                 "pattern": "^[a-z]{3,5}$"
             }
         },
-        "questionpointer": {
-            "type": "object",
-            "properties": {
-                "namespace" : { "$ref": "#/common/namespace" },
-                "questionid": { "$ref": "#/common/ids/questionid" }
-            },
-            "required": ["questionid", "namespace"],
-            "additionalProperties": false
-        },
-        "precondition": {
-            "type": "object",
-            "properties": {
-                "namespace": { "$ref": "#/common/namespace" },
-                "questionid": { "$ref": "#/common/ids/questionid" },
-                "answerid": { "$ref": "#/common/ids/answerid" }
-            },
-            "required": [ "questionid" ],
-            "additionalProperties": false
-        },
         "experts": {
             "expert": {
                 "type": "object",
                 "properties": {
-                    "uuid": { "type": "uuid" },
+                    "uuid": { "$ref": "#/common/uids/uuid" },
                     "name": { "type": "string" },
                     "email": { "type": "string", "format": "email" },
                     "class": {
@@ -81,7 +62,7 @@
             "dmpbookreference": {
                 "type": "object",
                 "properties": {
-                    "uuid": { "type": "uuid" },
+                    "uuid": { "$ref": "#/common/uids/uuid" },
                     "type" : { "type": "string", "enum": ["dmpbook"] },
                     "chapter": { "type": "string" }
                 },
@@ -91,7 +72,7 @@
             "urlreference": {
                 "type": "object",
                 "properties": {
-                    "uuid": { "type": "uuid" },
+                    "uuid": { "$ref": "#/common/uids/uuid" },
                     "type" : { "type": "string", "enum": ["url"] },
                     "weblink": { "type": "string", "format": "uri" },
                     "anchor": { "type": "string" }
@@ -113,7 +94,7 @@
             "resourcepagereference": {
                 "type": "object",
                 "properties": {
-                    "uuid": { "type": "uuid" },
+                    "uuid": { "$ref": "#/common/uids/uuid" },
                     "type": { "type": "string", "enum": ["resourcepage"] },
                     "shortuid": { "$ref": "#/common/uids/shortuid" }
                 },
@@ -138,7 +119,7 @@
             "optionanswer": {
                 "type": "object",
                 "properties": {
-                    "uuid": { "type": "uuid" },
+                    "uuid": { "$ref": "#/common/uids/uuid" },
                     "id": { "$ref" : "#/common/ids/answerid" },
                     "label": { "type": "string" },
                     "advice": { "type": "string" }
@@ -156,11 +137,11 @@
             "question": {
                 "type": "object",
                 "properties": {
-                    "uuid": { "type": "uuid" },
+                    "uuid": { "$ref": "#/common/uids/uuid" },
                     "questionid": { "$ref": "#/common/ids/questionid" },
                     "title": { "type": "string" },
                     "text": { "type": "string" },
-                    "precondition": { "$ref": "#/common/precondition" },
+                    "precondition": { "$ref": "#/common/uids/uuid" },
                     "references": { "$ref": "#/common/references/references" },
                     "experts": { "$ref": "#/common/experts/experts" }
                 },
@@ -185,7 +166,7 @@
         "chapter": {
             "type": "object",
             "properties": {
-                "uuid": { "type": "uuid" },
+                "uuid": { "$ref": "#/common/uids/uuid" },
                 "chapterid": { "$ref": "#/common/ids/chapterid" },
                 "namespace": { "$ref": "#/common/namespace" },
                 "formatversion": { "$ref": "#/common/formatversion" },
@@ -199,16 +180,6 @@
         "namespace": {
             "type": "string",
             "enum": ["core"]
-        },
-        "precondition": {
-            "allOf": [
-                { "$ref": "#/common/precondition" },
-                {
-                    "properties": {
-                        "namespace": { "$ref": "#/core/namespace" }
-                    }
-                }
-            ]
         },
         "references": {
             "crossreference": {
@@ -242,7 +213,6 @@
                     {
                         "properties": {
                             "title": { "type": "string" },
-                            "precondition": { "$ref": "#/core/precondition" },
                             "references": { "$ref": "#/core/references/references" }
                         },
                         "required": ["uuid", "questionid", "title"]
@@ -301,7 +271,7 @@
                     {
                         "properties": {
                             "namespace": { "$ref": "#/common/namespace" },
-                            "insertBefore": { "$ref": "#/common/questionpointer" },
+                            "insertBefore": { "$ref": "#/common/uids/uuid" },
                             "addReferences": { "$ref": "#/common/references/references" },
                             "addExperts": { "$ref": "#/common/experts/experts" }
                         },
@@ -330,7 +300,7 @@
                     { "$ref": "#/core/questions/abstract_question" },
                     {
                         "properties": {
-                            "insertBefore": { "$ref": "#/common/questionpointer" }
+                            "insertBefore": { "$ref": "#/common/uids/uuid" }
                         }
                     },
                     { "$ref": "#/common/questions/optionquestion" }
@@ -341,7 +311,7 @@
                     { "$ref": "#/core/questions/abstract_question" },
                     {
                         "properties": {
-                            "insertBefore": { "$ref": "#/common/questionpointer" }
+                            "insertBefore": { "$ref": "#/common/uids/uuid" }
                         }
                     },
                     { "$ref": "#/common/questions/fieldquestion" }
