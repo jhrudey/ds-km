@@ -156,8 +156,8 @@
 		],
 		"references":
 		[
-			{"type": "dmpbook", "chapter": "3.2.1"},
-			{"type": "resourcepage", "shortuid": "ybw"}
+			{ "uuid": "a18889af-00d0-40ff-8f4a-a2ae19664687", "type": "dmpbook", "chapter": "3.2.1"},
+			{ "uuid": "a338b156-3c43-4b26-8b10-bc6e485b80b5", "type": "resourcepage", "shortuid": "ybw"}
 		]
 	},
 	{
@@ -181,8 +181,8 @@
 		],
 		"references":
 		[
-			{"type": "dmpbook", "chapter": "3.2.1.1"},
-			{"type": "resourcepage", "shortuid": "hfg"}
+			{ "uuid": "a1f33a26-8caa-4b68-b3f7-0b5d5a659e68", "type": "dmpbook", "chapter": "3.2.1.1"},
+			{ "uuid": "c696fabf-9073-4254-a5c9-6db320d92e69", "type": "resourcepage", "shortuid": "hfg"}
 		]
 	},
 	{

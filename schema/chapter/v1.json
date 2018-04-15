@@ -83,6 +83,7 @@
             "crossreference": {
                 "type": "object",
                 "properties": {
+                    "uuid": { "$ref": "#/common/uids/uuid" },
                     "type" : { "type": "string", "enum": ["xref"] },
                     "chapterid": { "$ref": "#/common/ids/chapterid" },
                     "questionid": { "$ref": "#/common/ids/questionid" },
