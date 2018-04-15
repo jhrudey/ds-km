@@ -16,12 +16,12 @@
 	},
 	{
 		"uuid": "460803f2-cc23-4c57-b50e-c5177a3c11d5", "questionid": 3, "type": "string",
-		"precondition": {"questionid": 1, "answerid": 1},
+		"precondition": "b5c79d03-4f0f-4714-91a8-9b04a8f3980f",
 		"title": "What knowledge model will you be using?"
 	},
 	{
 		"uuid": "b73b8310-3b4f-49c8-a5c0-4208883754ac", "questionid": 4, "type": "option",
-		"precondition": {"questionid": 1, "answerid": 1},
+		"precondition": "b5c79d03-4f0f-4714-91a8-9b04a8f3980f",
 		"title": "How detailed will you be modeling?",
 		"answers":
 		[
@@ -33,7 +33,7 @@
 	},
 	{
 		"uuid": "6f3c5ba6-e546-422d-ba03-2f381dba06e5", "questionid": 5, "type": "option",
-		"precondition": {"questionid": 1, "answerid": 1},
+		"precondition": "b5c79d03-4f0f-4714-91a8-9b04a8f3980f",
 		"title": "Will you be building pathways?",
 		"answers":
 		[
@@ -43,7 +43,7 @@
 	},
 	{
 		"uuid": "f0bd0f5b-9ec9-47a7-9786-d71a2981763b", "questionid": 6, "type": "option",
-		"precondition": {"questionid": 5, "answerid": 1},
+		"precondition": "7ffd96db-f85a-4c07-bee2-5b845f39a784",
 		"title": "Will you be building new pathways?",
 		"answers":
 		[
@@ -53,7 +53,7 @@
 	},
 	{
 		"uuid": "1de4d08a-be6f-4c42-8514-b8da761283ef", "questionid": 7, "type": "option",
-		"precondition": {"questionid": 5, "answerid": 1},
+		"precondition": "7ffd96db-f85a-4c07-bee2-5b845f39a784",
 		"title": "Will you be extending existing pathways?",
 		"answers":
 		[
@@ -63,7 +63,7 @@
 	},
 	{
 		"uuid": "7b08e6e3-2985-4983-8a35-34399f31ae5c", "questionid": 8, "type": "option",
-		"precondition": {"questionid": 1, "answerid": 1},
+		"precondition": "b5c79d03-4f0f-4714-91a8-9b04a8f3980f",
 		"title": "Will you be using statistical modeling?",
 		"answers":
 		[
@@ -73,7 +73,7 @@
 	},
 	{
 		"uuid": "3afd1d15-bb0c-43a9-ba8d-c108330073ca", "questionid": 9, "type": "option",
-		"precondition": {"questionid": 1, "answerid": 1},
+		"precondition": "b5c79d03-4f0f-4714-91a8-9b04a8f3980f",
 		"title": "Will you be building kinetic models?",
 		"answers":
 		[
@@ -92,7 +92,7 @@
 	},
 	{
 		"uuid": "a5219108-2f64-4dca-83e2-59c66859ad95", "questionid": 10, "type": "option",
-		"precondition": {"questionid": 2, "answerid": 1},
+		"precondition": "7f216a49-9a76-466a-a651-543010d18184",
 		"title": "Will you use model building by homology?",
 		"answers":
 		[
@@ -102,7 +102,7 @@
 	},
 	{
 		"uuid": "abf8beaf-3dd3-416c-b15e-45388053726c", "questionid": 11, "type": "option",
-		"precondition": {"questionid": 2, "answerid": 1},
+		"precondition": "7f216a49-9a76-466a-a651-543010d18184",
 		"title": "Will you use enzyme activity models?",
 		"answers":
 		[
@@ -112,7 +112,7 @@
 	},
 	{
 		"uuid": "b54356a9-c34e-453c-bf88-efa2de970ef0", "questionid": 12, "type": "option",
-		"precondition": {"questionid": 2, "answerid": 1},
+		"precondition": "7f216a49-9a76-466a-a651-543010d18184",
 		"title": "Will you use molecular dynamics?",
 		"answers":
 		[

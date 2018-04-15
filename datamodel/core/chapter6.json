@@ -32,7 +32,7 @@
 	},
 	{
 		"uuid": "b73b8310-3b4f-49c8-a5c0-4208883754ac", "questionid": 4, "type": "text",
-		"precondition": {"questionid": 2, "answerid": 99},
+		"precondition": "ccdb5296-919c-44ac-89df-351fd2e564ae",
 		"title": "What other arrangements?"
 	},
 	{

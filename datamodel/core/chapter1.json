@@ -27,7 +27,7 @@
 	},
 	{
 		"uuid": "59efe0c4-fc18-4082-a656-6d0c1db45899", "questionid": 2, "type": "option",
-		"precondition": { "questionid": 1, "answerid": 1 },
+		"precondition": "2663b978-5125-4224-9930-0a50dbe895c9",
 		"title": "Will you be using any pre-existing data (including other people's data)?",
 		"text": "Will you be referring to any earlier measured data, reference data, or data that should be mined from existing literature? Your own data as well as data from others?",
 		"answers":
@@ -46,7 +46,7 @@
 	},
 	{
 		"uuid": "fcc51962-08df-4f4c-85ad-6bb932107010", "questionid": 3, "type": "list",
-		"precondition": { "questionid": 2, "answerid": 1 },
+		"precondition": "dac677d4-99f9-4af8-935a-4a1c9c7cdbdf",
 		"title": "What reference data will you use?",
 		"text": "Much of todays data is used in comparison with reference data. A genome for instance is compared with a reference genome to identify genomic variants. If you use reference data, there are several other issues that you should consider. What are the reference data sets that you will use?",
 		"references":
@@ -57,7 +57,7 @@
 	},
 	{
 		"uuid": "9ac2713c-6aa1-4884-a93f-2ac727d00567", "questionid": 4, "type": "option",
-		"precondition": { "questionid": 3 },
+		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "Do you know where and how is it available?",
 		"text": "Do you know where the reference data is available, what the conditions for use are, and how to reference it?",
 		"answers":
@@ -73,7 +73,7 @@
 	},
 	{
 		"uuid": "7b8c75c0-8d5c-4fde-9898-ded8b91f7f1f", "questionid": 5, "type": "option",
-		"precondition": { "questionid": 3 },
+		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "Do you know in what format the reference data is available?",
 		"text": "Do you know the data format of the reference data? Is this suitable for your work? Does it need to be converted?",
 		"answers":
@@ -89,7 +89,7 @@
 	},
 	{
 		"uuid": "10b6548c-21cd-44c8-a8de-47415e7b012e", "questionid": 6, "type": "option",
-		"precondition": { "questionid": 3 },
+		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "Is the reference data resource versioned?",
 		"text": "Many reference data sets evolve over time. If the reference data set changes, this may affect your results. If different versions of a reference data set exist, you need to establish your \"version policy\".",
 		"answers":
@@ -105,13 +105,13 @@
 	},
 	{
 		"uuid": "f00a28fb-ac77-4110-b285-c73c8bc62630", "questionid": 7, "type": "text",
-		"precondition": { "questionid": 6, "answerid": 1 },
+		"precondition": "842007ce-0951-4655-8acc-b0f582e82ea1",
 		"title": "Which version will you use?",
 		"text": "If there are different versions available, you have to decide with all project partners together which version you will be using. Probably you will go for the latest release as of the date of the start of your research project. However, if you have other data from older projects that need to be merged, you may need to consider using the same release you used for a previous project."
 	},
 	{
 		"uuid": "481d0157-6d89-4f68-9f3b-cf1b05f8f15d", "questionid": 8, "type": "option",
-		"precondition": { "questionid": 6, "answerid": 1 },
+		"precondition": "842007ce-0951-4655-8acc-b0f582e82ea1",
 		"title": "Will you change version if it updates?",
 		"text": "If the reference changes while you are working on your research project, you need to decide whether you will follow these changes. Most likely that will mean that you have to do some analyses again, so you will need to make sure enough resources are available to do so. You can decide to stay with the version that you started with; this can have the disadvantage that you will not benefit from added information or added consistency.",
 		"answers":
@@ -123,7 +123,7 @@
 	},
 	{
 		"uuid": "deb9d6b3-4f11-4aa8-b016-52d1612c002a", "questionid": 79, "type": "option",
-		"precondition": { "questionid": 8, "answerid": 0},
+		"precondition": "a4f6a1da-536b-43fa-9637-71e33327fa08",
 		"title": "How will the old version be available?",
 		"text": "Since you want to keep using the old version of the reference data, how will it be available to you?",
 		"answers":
@@ -135,7 +135,7 @@
 	},
 	{
 		"uuid": "12762d00-f02a-40f7-b175-c7e4c92f5f54", "questionid": 80, "type": "option",
-		"precondition": { "questionid": 3},
+		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "How will you make sure the same reference data will be available to reproduce your results?",
 		"text": "Will the reference data in the version you use be available to others?",
 		"answers":
@@ -146,7 +146,7 @@
 	},
 	{
 		"uuid": "be872000-cb98-442f-999c-ca3ef58dcfe8", "questionid": 9, "type": "list",
-		"precondition": { "questionid": 2, "answerid": 1 },
+		"precondition": "dac677d4-99f9-4af8-935a-4a1c9c7cdbdf",
 		"title": "What existing non-reference data sets will you use?",
 		"text": "Even if you will be producing your own data, you often will also be relying on existing data sets (e.g. from earlier . You may need to integrate your new data with an existing data set or retrieve additional information from related data bases. Will you be doing such things?",
 		"references":
@@ -157,7 +157,7 @@
 	},
 	{
 		"uuid": "39e0cc7c-17fe-4991-88d8-1280c3fe7923", "questionid": 11, "type": "option",
-		"precondition": { "questionid": 9 },
+		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Will the owners of this data set work with you on this study",
 		"answers":
 		[
@@ -173,7 +173,7 @@
 	},
 	{
 		"uuid": "f59d2d89-fe27-4a8a-b3e6-2782bcc2fb97", "questionid": 10, "type": "option",
-		"precondition": { "questionid": 11, "answerid": 0 },
+		"precondition": "08fab0f9-20a7-4c22-9e7b-3a9fa81e49e9",
 		"title": "Do you need to request access to the data",
 		"answers":
 		[
@@ -183,7 +183,7 @@
 	},
 	{
 		"uuid": "27c83b38-1df2-4f91-89ac-2f6bf4e72190", "questionid": 13, "type": "option",
-		"precondition": { "questionid": 9 },
+		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Will any usage restrictions affect your reuse?",
 		"answers":
 		[
@@ -193,7 +193,7 @@
 	},
 	{
 		"uuid": "467ff3ad-156c-4285-9efb-c91072b3544e", "questionid": 12, "type": "option",
-		"precondition": { "questionid": 9 },
+		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Is extension of any consent for privacy sensitive data needed?",
 		"text": "If the data that you will re-use is coupled to people, is the informed consent that was originally obtained from those people covering your current research?",
 		"answers":
@@ -209,7 +209,7 @@
 	},
 	{
 		"uuid": "62ddfc73-1680-4bbf-b198-6a7231875fb1", "questionid": 14, "type": "option",
-		"precondition": { "questionid": 9 },
+		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "How will you be accessing the data?",
 		"answers":
 		[
@@ -220,7 +220,7 @@
 	},
 	{
 		"uuid": "588e3c1f-e9fd-411f-954e-f7a9b1cff1de", "questionid": 15, "type": "option",
-		"precondition": { "questionid": 9 },
+		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Do you know in what format the data is available?",
 		"text": "Do you know the data format of the data? Is this suitable for your work? Does it need to be converted?",
 		"answers":
@@ -231,7 +231,7 @@
 	},
 	{
 		"uuid": "3b088f38-81bd-46f9-8066-90513740b662", "questionid": 17, "type": "option",
-		"precondition": { "questionid": 9 },
+		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Is the data set fixed, or will it be updated in the future?",
 		"text": "Is the data set you will reuse a fixed data set (with a persistent identifier), or is it a data set that is being worked on (by others) and may be updated during your project or after?",
 		"answers":
@@ -242,7 +242,7 @@
 	},
 	{
 		"uuid": "2e7af465-4852-4411-8d8e-7f0ff64d8b25", "questionid": 18, "type": "option",
-		"precondition": { "questionid": 9 },
+		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Can you and will you use the complete existing data set?",
 		"text": "If you use any filtering, how will you make sure that your results will be reproducible by yourself and others at a later time?",
 		"answers":
@@ -254,7 +254,7 @@
 	},
 	{
 		"uuid": "8cedcf93-7676-4397-b3fc-a81167ff1853", "questionid": 16, "type": "option",
-		"precondition": { "questionid": 2 },
+		"precondition": "59efe0c4-fc18-4082-a656-6d0c1db45899",
 		"title": "Do you need to harmonize different sources of existing data?",
 		"text": "If you are combining data from different sources, harmonization may be required. You may need to re-analyse some original data.",
 		"answers":
@@ -270,7 +270,7 @@
 	},
 	{
 		"uuid": "7e77ee02-ce26-4cd9-b07d-3eea03bc35c9", "questionid": 81, "type": "option",
-		"precondition": { "questionid": 2 },
+		"precondition": "59efe0c4-fc18-4082-a656-6d0c1db45899",
 		"title": "Will you be using data that needs to be (re-)made computer readable first?",
 		"text": "Some old data may need to be recovered, e.g. from tables in scientific papers or may be punch cards.",
 		"answers":
@@ -301,7 +301,7 @@
 	},
 	{
 		"uuid": "9f081091-0810-4f12-be7f-0a22ee928a14", "questionid": 30, "type": "text",
-		"precondition": { "questionid": 29, "answerid": 1 },
+		"precondition": "bdf55011-db06-4f4a-b26f-ebbbe029da04",
 		"title": "What will the Intellectual Property be like?",
 		"text": "Who will own the rights to the reference data set? Who will be able to use it?",
 		"references":
@@ -312,7 +312,7 @@
 	},
 	{
 		"uuid": "27769a31-717b-4204-8468-175ac93b195a", "questionid": 31, "type": "text",
-		"precondition": { "questionid": 29, "answerid": 1 },
+		"precondition": "bdf55011-db06-4f4a-b26f-ebbbe029da04",
 		"title": "How will you maintain it?",
 		"text": "How will maintenance be paid for in the long run? Will you host it yourself or deposit it with a repository? How will you deal with requests for help? And with requests for adding data?",
 		"references":
@@ -323,7 +323,7 @@
 	},
 	{
 		"uuid": "2679736a-800e-4eaa-a70f-818070540c48", "questionid": 32, "type": "text",
-		"precondition": { "questionid": 29, "answerid": 1 },
+		"precondition": "bdf55011-db06-4f4a-b26f-ebbbe029da04",
 		"title": "How will the release schedule be?",
 		"text": "Will you be updating the reference data at regular intervals?"
 	},
