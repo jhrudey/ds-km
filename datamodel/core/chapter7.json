@@ -22,7 +22,7 @@
 	},
 	{
 		"uuid": "a549d10b-aa46-4c0c-863f-30219ac5ecce", "questionid": 25, "type": "option",
-		"title": "Cal all of your data become completely open immediately?",
+		"title": "Can all of your data become completely open immediately?",
 		"answers":
 		[
 			{ "uuid": "b3739ebd-2d8e-42d3-9425-a7d6d1b26c79", "id": 0, "label": "No" },
@@ -389,7 +389,7 @@
 		"title": "Did you work out the financial aspects of making the data available?",
 		"answers":
 		[
-			{ "uuid": "902cf40c-cb46-4f3f-811a-b36faa612fa6", "id": 0, "label": "This as been taken care of" },
+			{ "uuid": "902cf40c-cb46-4f3f-811a-b36faa612fa6", "id": 0, "label": "This has been taken care of" },
 			{ "uuid": "e1f2f5cb-2e70-4d0d-b00c-c1f4792b6f49", "id": 1, "label": "Explore this with additional questions" }
 		]
 	},

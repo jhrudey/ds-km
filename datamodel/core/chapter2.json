@@ -8,18 +8,44 @@
 	"questions" :
 	[
 	{
-		"uuid": "b08fe063-33f8-4380-b3a9-ba1e586dedf2", "questionid": 1, "type": "option",
-		"title": "Have you identified types of data that you will use that are used by others too?",
-		"text": "Some types of data (e.g. genetic variants in the life sciences) are used by many different projects. For such data, often common standards exist that help to make these data reusable. Are you using such common data formats?",
-		"answers":
-		[
-			{ "uuid": "a007c814-4328-4d77-9014-efee6210fb30", "id": 0, "label": "No, I am not using any common data types" },
-			{ "uuid": "7510967d-85e2-426b-bcf6-e74478fb81cd", "id": 1, "label": "Yes, I will make sure to use common formats for common data types" }
-		],
+		"uuid": "b08fe063-33f8-4380-b3a9-ba1e586dedf2", "questionid": 1, "type": "list",
+		"title": "What data formats/types will you be using?",
+		"text": "Have you identified types of data that you will use that are used by others too? Some types of data (e.g. genetic variants in the life sciences) are used by many different projects. For such data, often common standards exist that help to make these data reusable. Are you using such common data formats?",
 		"references":
 		[
 			{ "uuid": "ee5c094c-6a70-4e32-9a51-f1af339f180f", "type": "dmpbook", "chapter": "2.1" },
 			{ "uuid": "6ef479ac-8aa7-44d2-88a7-76dc7efa1b91", "type": "resourcepage", "shortuid": "njy" }
+		]
+	},
+	{
+		"uuid": "ecff019a-d4e6-44c6-a8fe-c84eb15ed8b7", "questionid": 95, "type": "option",
+		"precondition": "b08fe063-33f8-4380-b3a9-ba1e586dedf2",
+		"title": "Is this a standard data format used by others too?",
+		"answers":
+		[
+			{ "uuid": "52b7aba3-d809-4a30-b3f8-90caa7a32a10", "id": 0, "label": "No" },
+			{ "uuid": "d4ce2c56-b3df-4013-9220-289b28f922de", "id": 1, "label": "Yes" }
+		]
+	},
+	{
+		"uuid": "ced5a7c2-4034-4763-a1d5-3cb815cdfddb", "questionid": 96, "type": "option",
+		"precondition": "b08fe063-33f8-4380-b3a9-ba1e586dedf2",
+		"title": "Does this data format enable sharing and long term archiving?",
+		"text": "Complicated (binary) file formats tend to change over time, and software may not stay compatible with older versions. Also, some formats hamper long term usability by making use of patents or being hampered by restrictive licensing",
+		"answers":
+		[
+			{ "uuid": "86e547b8-e3ae-44b2-89ad-3a0d67decc56", "id": 0, "label": "No" },
+			{ "uuid": "985e488d-257f-479d-8113-5dcbe105a08e", "id": 1, "label": "Yes" }
+		]
+	},
+	{
+		"uuid": "bf32374c-b24e-4b03-9898-a753cff56fcf", "questionid": 97, "type": "option",
+		"precondition": "86e547b8-e3ae-44b2-89ad-3a0d67decc56",
+		"title": "Will you convert to a file format more suitable for archiving later?",
+		"answers":
+		[
+			{ "uuid": "3159d107-d322-4126-958f-900fc011eeae", "id": 0, "label": "No" },
+			{ "uuid": "7d8dc2f5-2699-4fb3-8bf6-e620868a0583", "id": 1, "label": "Yes", "advice": "You may need to reserve time and budget for this" }
 		]
 	},
 	{
@@ -119,6 +145,38 @@
 		[
 			{ "uuid": "a23664b1-a17c-41fe-855c-db274984b355", "id": 0, "label": "No", "advice": "Did you really check a service like fairsharing.org to verify this?" },
 			{ "uuid": "08bd1365-7f0e-4b78-aeb1-3c0e85e84cb6", "id": 1, "label": "Yes" }
+		],
+		"references":
+		[
+			{ "uuid": "2bdad98e-ef5f-4645-9ec7-bf5101e0b4c1", "type": "url", "weblink": "http://fairsharing.org/", "anchor": "FAIRsharing repository of standards"}]
+	},
+	{
+		"uuid": "44a9d6c0-f96c-47d2-8c7a-902a9c222067", "questionid": 98, "type": "option",
+		"precondition": "a23664b1-a17c-41fe-855c-db274984b355",
+		"title": "Do you have a good idea of what metadata is needed to make it possible for others to read and interpret your data in the future?",
+		"answers":
+		[
+			{ "uuid": "49e35bb1-6145-4b44-b390-9e1fe896415e", "id": 0, "label": "No" },
+			{ "uuid": "b3acec51-6385-43f1-a28a-123ab28b798f", "id": 1, "label": "Yes" }
+		],
+		"references":
+		[
+			{ "uuid": "67a39c34-fe6f-415e-93d1-998fc2911748", "type": "url", "weblink": "http://fairsharing.org/", "anchor": "FAIRsharing repository of standards"}
+		]
+	},
+	{
+		"uuid": "ed872b74-6bf7-4cba-8f36-4da4509e4a4f", "questionid": 99, "type": "option",
+		"precondition": "6d18bfff-0f53-469b-934e-9806dda9d4fb",
+		"title": "Do you know how and when you will be collecting the necessary metadata?",
+		"text": "Often it is easiest to make sure you collect the metadata as early as possible.",
+		"answers":
+		[
+			{ "uuid": "bc41fb1c-e64b-44cd-b0d6-45aebc3a9b84", "id": 0, "label": "No" },
+			{ "uuid": "2fb268e0-2c25-475a-b7e1-7794a05a3091", "id": 1, "label": "Yes" }
+		],
+		"references":
+		[
+			{ "uuid": "cab1617b-adf5-46c0-9e55-66348e35961f", "type": "url", "weblink": "http://fairsharing.org/", "anchor": "FAIRsharing repository of standards" }
 		]
 	},
 	{
