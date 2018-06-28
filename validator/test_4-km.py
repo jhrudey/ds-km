@@ -13,8 +13,19 @@ def test_load_chapters(chapters, km):
 
 
 def test_uuid_uniqueness(km):
-    pass
+    build_uuid_dict(km)
 
 
 def test_referencing(km):
-    pass
+    items = build_uuid_dict(km)
+    for uuid, item in items.items():
+        if 'precondition' in item:  # question precondition
+            precd = item['precondition']
+            assert not uuid == precd
+            assert precd in items.keys()
+            assert items[precd][0] in ('question', 'answer')
+        if 'target' in item:  # crossreference (xref)
+            target = item['target']
+            assert not uuid == target
+            assert target in items.keys()
+            assert items[target][0] in ('question', 'answer')
