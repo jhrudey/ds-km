@@ -1,6 +1,5 @@
 {
 	"uuid": "82fd0cce-2b41-423f-92ad-636d0872045c",
-	"chapterid": 1,
 	"namespace": "core",
 	"formatversion": 1,
 	"title": "Design of experiment",
@@ -8,16 +7,16 @@
 	"questions" :
 	[
 	{
-		"uuid": "efc80cc8-8318-4f8c-acb7-dc1c60e491c1", "questionid": 1, "type": "option",
+		"uuid": "efc80cc8-8318-4f8c-acb7-dc1c60e491c1", "type": "option",
 		"title": "Is there any pre-existing data?",
 		"text": "Are there any data sets available in the world that are relevant to your planned research?",
 		"answers":
 		[
 			{
-				"uuid": "72cdbc99-2707-4817-ac40-435a03e5e837", "id": 0, "label": "No",
+				"uuid": "72cdbc99-2707-4817-ac40-435a03e5e837", "label": "No",
 				"advice": "You know that this is very unlikely? This question is not only about data sets that are similar to what you want to determine yourself, but also reference data or data that should be mined from the existing literature. Further, it is very likely that you will refer to related data, e.g. other databases where you usually \"quickly look something up\", but that could maybe be properly integrated, especially if you need to do such lookups multiple times."
 			},
-			{ "uuid": "2663b978-5125-4224-9930-0a50dbe895c9", "id": 1, "label": "Yes" }
+			{ "uuid": "2663b978-5125-4224-9930-0a50dbe895c9", "label": "Yes" }
 		],
 		"references":
 		[
@@ -26,17 +25,17 @@
 		]
 	},
 	{
-		"uuid": "59efe0c4-fc18-4082-a656-6d0c1db45899", "questionid": 2, "type": "option",
+		"uuid": "59efe0c4-fc18-4082-a656-6d0c1db45899", "type": "option",
 		"precondition": "2663b978-5125-4224-9930-0a50dbe895c9",
 		"title": "Will you be using any pre-existing data (including other people's data)?",
 		"text": "Will you be referring to any earlier measured data, reference data, or data that should be mined from existing literature? Your own data as well as data from others?",
 		"answers":
 		[
 			{
-				"uuid": "18a860e6-4f77-459e-bfeb-24949924ac44", "id": 0, "label": "No",
+				"uuid": "18a860e6-4f77-459e-bfeb-24949924ac44", "label": "No",
 				"advice": "Did you research all the data that exists? You may not be aware of all existing data that could be available. Although using and/or integrating existing data sets may pose a challenge, it will normally be cheaper than collecting everything yourself. Even if you decide not to use an existing data set, it is better to do this as a conscious decision."
 			},
-			{ "uuid": "dac677d4-99f9-4af8-935a-4a1c9c7cdbdf", "id": 1, "label": "Yes" }
+			{ "uuid": "dac677d4-99f9-4af8-935a-4a1c9c7cdbdf", "label": "Yes" }
 		],
 		"references":
 		[
@@ -45,7 +44,7 @@
 		]
 	},
 	{
-		"uuid": "fcc51962-08df-4f4c-85ad-6bb932107010", "questionid": 3, "type": "list",
+		"uuid": "fcc51962-08df-4f4c-85ad-6bb932107010", "type": "list",
 		"precondition": "dac677d4-99f9-4af8-935a-4a1c9c7cdbdf",
 		"title": "What reference data will you use?",
 		"text": "Much of todays data is used in comparison with reference data. A genome for instance is compared with a reference genome to identify genomic variants. If you use reference data, there are several other issues that you should consider. What are the reference data sets that you will use?",
@@ -56,14 +55,14 @@
 		]
 	},
 	{
-		"uuid": "9ac2713c-6aa1-4884-a93f-2ac727d00567", "questionid": 4, "type": "option",
+		"uuid": "9ac2713c-6aa1-4884-a93f-2ac727d00567", "type": "option",
 		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "Do you know where and how is it available?",
 		"text": "Do you know where the reference data is available, what the conditions for use are, and how to reference it?",
 		"answers":
 		[
-			{ "uuid": "08bed2b3-fe76-48e5-a884-7f2658f90845", "id": 0, "label": "No", "advice": "Figure this out quickly!" },
-			{ "uuid": "14a7b8cd-7edb-4dab-937b-36b42726fe6e", "id": 1, "label": "Yes" }
+			{ "uuid": "08bed2b3-fe76-48e5-a884-7f2658f90845", "label": "No", "advice": "Figure this out quickly!" },
+			{ "uuid": "14a7b8cd-7edb-4dab-937b-36b42726fe6e", "label": "Yes" }
 		],
 		"references":
 		[
@@ -72,14 +71,14 @@
 		]
 	},
 	{
-		"uuid": "7b8c75c0-8d5c-4fde-9898-ded8b91f7f1f", "questionid": 5, "type": "option",
+		"uuid": "7b8c75c0-8d5c-4fde-9898-ded8b91f7f1f", "type": "option",
 		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "Do you know in what format the reference data is available?",
 		"text": "Do you know the data format of the reference data? Is this suitable for your work? Does it need to be converted?",
 		"answers":
 		[
-			{ "uuid": "2c2a9b84-b140-4e17-8026-56d5372064d0", "id": 0, "label": "I can directly use it" },
-			{ "uuid": "9de86d7b-9c60-47d6-8cb1-bfca13d6f619", "id": 1, "label": "I need to convert it before using" }
+			{ "uuid": "2c2a9b84-b140-4e17-8026-56d5372064d0", "label": "I can directly use it" },
+			{ "uuid": "9de86d7b-9c60-47d6-8cb1-bfca13d6f619", "label": "I need to convert it before using" }
 		],
 		"references":
 		[
@@ -88,14 +87,14 @@
 		]
 	},
 	{
-		"uuid": "10b6548c-21cd-44c8-a8de-47415e7b012e", "questionid": 6, "type": "option",
+		"uuid": "10b6548c-21cd-44c8-a8de-47415e7b012e", "type": "option",
 		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "Is the reference data resource versioned?",
 		"text": "Many reference data sets evolve over time. If the reference data set changes, this may affect your results. If different versions of a reference data set exist, you need to establish your \"version policy\".",
 		"answers":
 		[
-			{ "uuid": "32c9e457-8289-4825-9334-83ff87adeb3f", "id": 0, "label": "No" },
-			{ "uuid": "842007ce-0951-4655-8acc-b0f582e82ea1", "id": 1, "label": "Yes" }
+			{ "uuid": "32c9e457-8289-4825-9334-83ff87adeb3f", "label": "No" },
+			{ "uuid": "842007ce-0951-4655-8acc-b0f582e82ea1", "label": "Yes" }
 		],
 		"references":
 		[
@@ -104,48 +103,48 @@
 		]
 	},
 	{
-		"uuid": "f00a28fb-ac77-4110-b285-c73c8bc62630", "questionid": 7, "type": "text",
+		"uuid": "f00a28fb-ac77-4110-b285-c73c8bc62630","type": "text",
 		"precondition": "842007ce-0951-4655-8acc-b0f582e82ea1",
 		"title": "Which version will you use?",
 		"text": "If there are different versions available, you have to decide with all project partners together which version you will be using. Probably you will go for the latest release as of the date of the start of your research project. However, if you have other data from older projects that need to be merged, you may need to consider using the same release you used for a previous project."
 	},
 	{
-		"uuid": "481d0157-6d89-4f68-9f3b-cf1b05f8f15d", "questionid": 8, "type": "option",
+		"uuid": "481d0157-6d89-4f68-9f3b-cf1b05f8f15d", "type": "option",
 		"precondition": "842007ce-0951-4655-8acc-b0f582e82ea1",
 		"title": "Will you change version if it updates?",
 		"text": "If the reference changes while you are working on your research project, you need to decide whether you will follow these changes. Most likely that will mean that you have to do some analyses again, so you will need to make sure enough resources are available to do so. You can decide to stay with the version that you started with; this can have the disadvantage that you will not benefit from added information or added consistency.",
 		"answers":
 		[
-			{ "uuid": "a4f6a1da-536b-43fa-9637-71e33327fa08", "id": 0, "label": "Will stay with the old version" },
-			{ "uuid": "069a0976-498c-4a47-b42f-33c6a1e40126", "id": 1, "label": "New analyses will be done with the new version" },
-			{ "uuid": "dc8dbe60-43e8-4ed4-ab11-13bb74aea820", "id": 2, "label": "All analyses will be redone with the new version" }
+			{ "uuid": "a4f6a1da-536b-43fa-9637-71e33327fa08", "label": "Will stay with the old version" },
+			{ "uuid": "069a0976-498c-4a47-b42f-33c6a1e40126", "label": "New analyses will be done with the new version" },
+			{ "uuid": "dc8dbe60-43e8-4ed4-ab11-13bb74aea820", "label": "All analyses will be redone with the new version" }
 		]
 	},
 	{
-		"uuid": "deb9d6b3-4f11-4aa8-b016-52d1612c002a", "questionid": 79, "type": "option",
+		"uuid": "deb9d6b3-4f11-4aa8-b016-52d1612c002a", "type": "option",
 		"precondition": "a4f6a1da-536b-43fa-9637-71e33327fa08",
 		"title": "How will the old version be available?",
 		"text": "Since you want to keep using the old version of the reference data, how will it be available to you?",
 		"answers":
 		[
-			{ "uuid": "bbef3d6c-7a90-4d5e-8d72-1fea083f6410", "id": 0, "label": "I will need it only at the beginning" },
-			{ "uuid": "e6ddd126-0878-4831-9450-8c5f3e9126dd", "id": 1, "label": "I will use a downloaded version" },
-			{ "uuid": "07f06e60-9d5b-46b9-832a-75b881c4a9cb", "id": 2, "label": "The provider keeps old versions around" }
+			{ "uuid": "bbef3d6c-7a90-4d5e-8d72-1fea083f6410", "label": "I will need it only at the beginning" },
+			{ "uuid": "e6ddd126-0878-4831-9450-8c5f3e9126dd", "label": "I will use a downloaded version" },
+			{ "uuid": "07f06e60-9d5b-46b9-832a-75b881c4a9cb", "label": "The provider keeps old versions around" }
 		]
 	},
 	{
-		"uuid": "12762d00-f02a-40f7-b175-c7e4c92f5f54", "questionid": 80, "type": "option",
+		"uuid": "12762d00-f02a-40f7-b175-c7e4c92f5f54", "type": "option",
 		"precondition": "fcc51962-08df-4f4c-85ad-6bb932107010",
 		"title": "How will you make sure the same reference data will be available to reproduce your results?",
 		"text": "Will the reference data in the version you use be available to others?",
 		"answers":
 		[
-			{ "uuid": "9832a3a5-e24d-4db1-b48f-4d171c1402ae", "id": 0, "label": "I will keep a copy and make it available with my results" },
-			{ "uuid": "b4d8d8b8-3c8e-4b41-87a4-dbd01e7b7ad9", "id": 1, "label": "The provider keeps old versions around" }
+			{ "uuid": "9832a3a5-e24d-4db1-b48f-4d171c1402ae", "label": "I will keep a copy and make it available with my results" },
+			{ "uuid": "b4d8d8b8-3c8e-4b41-87a4-dbd01e7b7ad9", "label": "The provider keeps old versions around" }
 		]
 	},
 	{
-		"uuid": "be872000-cb98-442f-999c-ca3ef58dcfe8", "questionid": 9, "type": "list",
+		"uuid": "be872000-cb98-442f-999c-ca3ef58dcfe8", "type": "list",
 		"precondition": "dac677d4-99f9-4af8-935a-4a1c9c7cdbdf",
 		"title": "What existing non-reference data sets will you use?",
 		"text": "Even if you will be producing your own data, you often will also be relying on existing data sets (e.g. from earlier . You may need to integrate your new data with an existing data set or retrieve additional information from related data bases. Will you be doing such things?",
@@ -156,14 +155,14 @@
 		]
 	},
 	{
-		"uuid": "39e0cc7c-17fe-4991-88d8-1280c3fe7923", "questionid": 11, "type": "option",
+		"uuid": "39e0cc7c-17fe-4991-88d8-1280c3fe7923", "type": "option",
 		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Will the owners of this data set work with you on this study",
 		"answers":
 		[
-			{ "uuid": "08fab0f9-20a7-4c22-9e7b-3a9fa81e49e9", "id": 0, "label": "No" },
-			{ "uuid": "b0384f48-668f-4be5-86cc-e3fec81bcdb7", "id": 1, "label": "Yes" },
-			{ "uuid": "08b6593f-60a2-498a-9c20-eeb55568f8c1", "id": 2, "label": "We are the owners" }
+			{ "uuid": "08fab0f9-20a7-4c22-9e7b-3a9fa81e49e9", "label": "No" },
+			{ "uuid": "b0384f48-668f-4be5-86cc-e3fec81bcdb7", "label": "Yes" },
+			{ "uuid": "08b6593f-60a2-498a-9c20-eeb55568f8c1", "label": "We are the owners" }
 		],
 		"references":
 		[
@@ -172,35 +171,35 @@
 		]
 	},
 	{
-		"uuid": "f59d2d89-fe27-4a8a-b3e6-2782bcc2fb97", "questionid": 10, "type": "option",
+		"uuid": "f59d2d89-fe27-4a8a-b3e6-2782bcc2fb97", "type": "option",
 		"precondition": "08fab0f9-20a7-4c22-9e7b-3a9fa81e49e9",
 		"title": "Do you need to request access to the data",
 		"answers":
 		[
-			{ "uuid": "d719a2b4-08e7-427e-9a8e-e4c6d827c0d4", "id": 0, "label": "No" },
-			{ "uuid": "ef89ca6e-3059-4821-995a-034cdb3cf48d", "id": 1, "label": "Yes" }
+			{ "uuid": "d719a2b4-08e7-427e-9a8e-e4c6d827c0d4", "label": "No" },
+			{ "uuid": "ef89ca6e-3059-4821-995a-034cdb3cf48d", "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "27c83b38-1df2-4f91-89ac-2f6bf4e72190", "questionid": 13, "type": "option",
+		"uuid": "27c83b38-1df2-4f91-89ac-2f6bf4e72190", "type": "option",
 		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Will any usage restrictions affect your reuse?",
 		"answers":
 		[
-			{ "uuid": "7dc57afd-66cc-4760-8f37-eb0db7bb1a96", "id": 0, "label": "No" },
-			{ "uuid": "525459fb-182b-4ebe-9558-7b3b3679dcd5", "id": 1, "label": "Yes" }
+			{ "uuid": "7dc57afd-66cc-4760-8f37-eb0db7bb1a96", "label": "No" },
+			{ "uuid": "525459fb-182b-4ebe-9558-7b3b3679dcd5", "label": "Yes" }
 		]
 	},
 	{
-		"uuid": "467ff3ad-156c-4285-9efb-c91072b3544e", "questionid": 12, "type": "option",
+		"uuid": "467ff3ad-156c-4285-9efb-c91072b3544e", "type": "option",
 		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Is extension of any consent for privacy sensitive data needed?",
 		"text": "If the data that you will re-use is coupled to people, is the informed consent that was originally obtained from those people covering your current research?",
 		"answers":
 		[
-			{ "uuid": "6a3e4ed2-60cf-47b5-b6e5-1cf26655e251", "id": 0, "label": "Not applicable" },
-			{ "uuid": "1d732f5b-e532-4672-9f67-4aa4e4eef449", "id": 1, "label": "Existing consent applies" },
-			{ "uuid": "e29f35b6-c138-401a-b3d8-9cdcff0b8223", "id": 2, "label": "New consent needed" }
+			{ "uuid": "6a3e4ed2-60cf-47b5-b6e5-1cf26655e251", "label": "Not applicable" },
+			{ "uuid": "1d732f5b-e532-4672-9f67-4aa4e4eef449", "label": "Existing consent applies" },
+			{ "uuid": "e29f35b6-c138-401a-b3d8-9cdcff0b8223", "label": "New consent needed" }
 		],
 		"references": [
 			{ "uuid": "b2274290-d7cd-4114-8eb7-78c14677e96e", "type": "dmpbook", "chapter": "1.9" },
@@ -208,59 +207,59 @@
 		]
 	},
 	{
-		"uuid": "62ddfc73-1680-4bbf-b198-6a7231875fb1", "questionid": 14, "type": "option",
+		"uuid": "62ddfc73-1680-4bbf-b198-6a7231875fb1", "type": "option",
 		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "How will you be accessing the data?",
 		"answers":
 		[
-			{ "uuid": "423f7c77-c3bd-4ece-a9f6-ad9e3d0428a1", "id": 0, "label": "Already have a copy" },
-			{ "uuid": "4e183e8d-d4bd-442a-a663-d3accf4f9217", "id": 1, "label": "Will download or get a copy" },
-			{ "uuid": "f5e1c4d3-79f7-4950-9b10-6a7738f21978", "id": 2, "label": "Will use it online" }
+			{ "uuid": "423f7c77-c3bd-4ece-a9f6-ad9e3d0428a1", "label": "Already have a copy" },
+			{ "uuid": "4e183e8d-d4bd-442a-a663-d3accf4f9217", "label": "Will download or get a copy" },
+			{ "uuid": "f5e1c4d3-79f7-4950-9b10-6a7738f21978", "label": "Will use it online" }
 		]
 	},
 	{
-		"uuid": "588e3c1f-e9fd-411f-954e-f7a9b1cff1de", "questionid": 15, "type": "option",
+		"uuid": "588e3c1f-e9fd-411f-954e-f7a9b1cff1de", "type": "option",
 		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Do you know in what format the data is available?",
 		"text": "Do you know the data format of the data? Is this suitable for your work? Does it need to be converted?",
 		"answers":
 		[
-			{ "uuid": "4831f187-8660-4641-9a32-a6f4f569614f", "id": 0, "label": "I can directly use it" },
-			{ "uuid": "3da33836-eff3-4166-898b-3c2c3d3989a8", "id": 1, "label": "I need to convert it before using" }
+			{ "uuid": "4831f187-8660-4641-9a32-a6f4f569614f", "label": "I can directly use it" },
+			{ "uuid": "3da33836-eff3-4166-898b-3c2c3d3989a8", "label": "I need to convert it before using" }
 		]
 	},
 	{
-		"uuid": "3b088f38-81bd-46f9-8066-90513740b662", "questionid": 17, "type": "option",
+		"uuid": "3b088f38-81bd-46f9-8066-90513740b662", "type": "option",
 		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Is the data set fixed, or will it be updated in the future?",
 		"text": "Is the data set you will reuse a fixed data set (with a persistent identifier), or is it a data set that is being worked on (by others) and may be updated during your project or after?",
 		"answers":
 		[
-			{ "uuid": "aff2edcd-4d18-4311-9a03-3b6b676c9277", "id": 0, "label": "It is a fixed data set, this will not influence reproducibility of my results" },
-			{ "uuid": "d700715e-4ae0-45ed-a1d3-4d79bb32155f", "id": 1, "label": "It may change", "advice": "Make sure a copy of the version you use will be available with my results" }
+			{ "uuid": "aff2edcd-4d18-4311-9a03-3b6b676c9277", "label": "It is a fixed data set, this will not influence reproducibility of my results" },
+			{ "uuid": "d700715e-4ae0-45ed-a1d3-4d79bb32155f", "label": "It may change", "advice": "Make sure a copy of the version you use will be available with my results" }
 		]
 	},
 	{
-		"uuid": "2e7af465-4852-4411-8d8e-7f0ff64d8b25", "questionid": 18, "type": "option",
+		"uuid": "2e7af465-4852-4411-8d8e-7f0ff64d8b25", "type": "option",
 		"precondition": "be872000-cb98-442f-999c-ca3ef58dcfe8",
 		"title": "Can you and will you use the complete existing data set?",
 		"text": "If you use any filtering, how will you make sure that your results will be reproducible by yourself and others at a later time?",
 		"answers":
 		[
-			{ "uuid": "2076afb5-3c5c-4f42-8f77-9b78fec76a62", "id": 0, "label": "I will use the complete data set" },
-			{ "uuid": "f748624d-8d28-4d07-91c7-28b33db1fabd", "id": 1, "label": "Any filtering or selection will be well documented" },
-			{ "uuid": "cba7c977-986d-4673-9bbc-fb3f7fed95c6", "id": 2, "label": "I will make sure the selected subset will be available together with my results"}
+			{ "uuid": "2076afb5-3c5c-4f42-8f77-9b78fec76a62", "label": "I will use the complete data set" },
+			{ "uuid": "f748624d-8d28-4d07-91c7-28b33db1fabd", "label": "Any filtering or selection will be well documented" },
+			{ "uuid": "cba7c977-986d-4673-9bbc-fb3f7fed95c6", "label": "I will make sure the selected subset will be available together with my results"}
 		]
 	},
 	{
-		"uuid": "8cedcf93-7676-4397-b3fc-a81167ff1853", "questionid": 16, "type": "option",
+		"uuid": "8cedcf93-7676-4397-b3fc-a81167ff1853", "type": "option",
 		"precondition": "59efe0c4-fc18-4082-a656-6d0c1db45899",
 		"title": "Do you need to harmonize different sources of existing data?",
 		"text": "If you are combining data from different sources, harmonization may be required. You may need to re-analyse some original data.",
 		"answers":
 		[
-			{ "uuid": "51b686f1-8a57-4d55-a1a5-30d77d074ada", "id": 0, "label": "No" },
-			{ "uuid": "a62a452b-dfed-478c-ad94-0e433277da94", "id": 1, "label": "Yes" }
+			{ "uuid": "51b686f1-8a57-4d55-a1a5-30d77d074ada", "label": "No" },
+			{ "uuid": "a62a452b-dfed-478c-ad94-0e433277da94", "label": "Yes" }
 		],
 		"references":
 		[
@@ -269,14 +268,14 @@
 		]
 	},
 	{
-		"uuid": "7e77ee02-ce26-4cd9-b07d-3eea03bc35c9", "questionid": 81, "type": "option",
+		"uuid": "7e77ee02-ce26-4cd9-b07d-3eea03bc35c9", "type": "option",
 		"precondition": "59efe0c4-fc18-4082-a656-6d0c1db45899",
 		"title": "Will you be using data that needs to be (re-)made computer readable first?",
 		"text": "Some old data may need to be recovered, e.g. from tables in scientific papers or may be punch cards.",
 		"answers":
 		[
-			{ "uuid": "d613ee29-a81b-44aa-83b5-2bf21ba43d22", "id": 0, "label": "No" },
-			{ "uuid": "4a3e9d91-240b-4eae-bc90-02c12a2a4744", "id": 1, "label": "Yes, I will make sure to make this data available with my results." }
+			{ "uuid": "d613ee29-a81b-44aa-83b5-2bf21ba43d22", "label": "No" },
+			{ "uuid": "4a3e9d91-240b-4eae-bc90-02c12a2a4744", "label": "Yes, I will make sure to make this data available with my results." }
 		],
 		"references":
 		[
@@ -285,13 +284,13 @@
 		]
 	},
 	{
-		"uuid": "588ad032-56ba-4d52-b29c-6a5b56aa6569", "questionid": 29, "type": "option",
+		"uuid": "588ad032-56ba-4d52-b29c-6a5b56aa6569", "type": "option",
 		"title": "Will reference data be created?",
 		"text": "Will any of the data that you will be creating form a reference data set for future research (by others)?",
 		"answers":
 		[
-			{ "uuid": "1e28b25b-bfe8-4d67-9643-6e57587a9495", "id": 0, "label": "No" },
-			{ "uuid": "bdf55011-db06-4f4a-b26f-ebbbe029da04", "id": 1, "label": "Yes" }
+			{ "uuid": "1e28b25b-bfe8-4d67-9643-6e57587a9495", "label": "No" },
+			{ "uuid": "bdf55011-db06-4f4a-b26f-ebbbe029da04", "label": "Yes" }
 		],
 		"references":
 		[
@@ -300,7 +299,7 @@
 		]
 	},
 	{
-		"uuid": "9f081091-0810-4f12-be7f-0a22ee928a14", "questionid": 30, "type": "text",
+		"uuid": "9f081091-0810-4f12-be7f-0a22ee928a14", "type": "text",
 		"precondition": "bdf55011-db06-4f4a-b26f-ebbbe029da04",
 		"title": "What will the Intellectual Property be like?",
 		"text": "Who will own the rights to the reference data set? Who will be able to use it?",
@@ -311,7 +310,7 @@
 		]
 	},
 	{
-		"uuid": "27769a31-717b-4204-8468-175ac93b195a", "questionid": 31, "type": "text",
+		"uuid": "27769a31-717b-4204-8468-175ac93b195a", "type": "text",
 		"precondition": "bdf55011-db06-4f4a-b26f-ebbbe029da04",
 		"title": "How will you maintain it?",
 		"text": "How will maintenance be paid for in the long run? Will you host it yourself or deposit it with a repository? How will you deal with requests for help? And with requests for adding data?",
@@ -322,18 +321,18 @@
 		]
 	},
 	{
-		"uuid": "2679736a-800e-4eaa-a70f-818070540c48", "questionid": 32, "type": "text",
+		"uuid": "2679736a-800e-4eaa-a70f-818070540c48", "type": "text",
 		"precondition": "bdf55011-db06-4f4a-b26f-ebbbe029da04",
 		"title": "How will the release schedule be?",
 		"text": "Will you be updating the reference data at regular intervals?"
 	},
 	{
-		"uuid": "0e810343-6026-4992-8ea0-5539cbc77093", "questionid": 33, "type": "option",
+		"uuid": "0e810343-6026-4992-8ea0-5539cbc77093", "type": "option",
 		"title": "Will you be storing samples?",
 		"answers":
 		[
-			{ "uuid": "bd40f22d-6bce-464c-b525-e7813762a006", "id": 0, "label": "No" },
-			{ "uuid": "05873934-f03d-4d90-8bfd-291350c14673", "id": 1, "label": "Yes" }
+			{ "uuid": "bd40f22d-6bce-464c-b525-e7813762a006", "label": "No" },
+			{ "uuid": "05873934-f03d-4d90-8bfd-291350c14673", "label": "Yes" }
 		],
 		"references":
 		[
@@ -342,12 +341,12 @@
 		]
 	},
 	{
-		"uuid": "8d082e2f-7792-4ef7-a851-6e5041cba8b6", "questionid": 38, "type": "option",
+		"uuid": "8d082e2f-7792-4ef7-a851-6e5041cba8b6", "type": "option",
 		"title": "Will you be collecting experimental data?",
 		"answers":
 		[
-			{ "uuid": "16003c9d-4639-46ab-a305-df528f58d1c5", "id": 0, "label": "No" },
-			{ "uuid": "640a6f6f-6bce-4847-892c-57ae459bff1d", "id": 1, "label": "Yes" }
+			{ "uuid": "16003c9d-4639-46ab-a305-df528f58d1c5", "label": "No" },
+			{ "uuid": "640a6f6f-6bce-4847-892c-57ae459bff1d", "label": "Yes" }
 		],
 		"references":
 		[
