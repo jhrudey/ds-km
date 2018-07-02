@@ -100,16 +100,60 @@
                 "default": []
             }
         },
+        "metrics": {
+            "metric": {
+                "type": "object",
+                "properties": {
+                    "uuid": { "$ref": "#/common/uids/uuid" },
+                    "title": { "type": "string" },
+                    "description": { "type": "string" },
+                    "references": { "$ref": "#/common/references/references" }
+                },
+                "required": ["uuid", "title"]
+            },
+            "metric_value": {
+                "type": "object",
+                "properties": {
+                    "uuid": { "$ref": "#/common/uids/uuid" },
+                    "value": { "type": "number", "minimum": 0, "maximum": 1}
+                },
+                "required": ["uuid", "value"]
+            },
+            "metric_values": {
+                "type": "array",
+                "items": { "$ref": "#/common/metrics/metric_value" },
+                "default": []
+            },
+            "metric_weight": {
+                "type": "object",
+                "properties": {
+                    "uuid": { "$ref": "#/common/uids/uuid" },
+                    "weight": { "type": "number", "minimum": 0}
+                },
+                "required": ["uuid", "weight"]
+            },
+            "metric_weights": {
+                "type": "array",
+                "items": { "$ref": "#/common/metrics/metric_weights" },
+                "default": []
+            }
+        },
+        "project_phase": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3,
+            "default": 2
+        },
         "answers": {
             "optionanswer": {
                 "type": "object",
                 "properties": {
                     "uuid": { "$ref": "#/common/uids/uuid" },
                     "label": { "type": "string" },
-                    "advice": { "type": "string" }
+                    "advice": { "type": "string" },
+                    "metricsValues": { "$ref": "#/common/metrics/metric_values"}
                 },
-                "required": [ "uuid", "label"],
-                "additionalProperties": false
+                "required": [ "uuid", "label"]
             },
             "optionanswers": {
                 "type": "array",
@@ -122,6 +166,7 @@
                 "type": "object",
                 "properties": {
                     "uuid": { "$ref": "#/common/uids/uuid" },
+                    "phase": { "$ref": "#/common/project_phase" },
                     "title": { "type": "string" },
                     "text": { "type": "string" },
                     "precondition": { "$ref": "#/common/uids/uuid" },
@@ -134,7 +179,8 @@
                 "type": "object",
                 "properties": {
                     "type": { "type": "string", "enum": ["option"] },
-                    "answers": { "$ref": "#/common/answers/optionanswers" }
+                    "answers": { "$ref": "#/common/answers/optionanswers" },
+                    "metricsWeights": { "$ref": "#/common/metrics/metric_weights"}
                 },
                 "required": ["type", "answers"]
             },
@@ -246,6 +292,27 @@
               { "type": "string" }
           ]
         },
+        "answers": {
+            "optionanswer": {
+                "allOf": [
+                    { "$ref": "#/common/answers/optionanswer" },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "addMetricsValues": { "$ref": "#/common/metrics/metric_values" }
+                        }
+                    }
+                ]
+            },
+            "optionanswers": {
+                "type": "array",
+                "items": { "anyOf": [
+                  { "$ref": "#/common/answers/optionanswer" },
+                  { "$ref": "#/local/answers/optionanswer" }
+                ]},
+                "minItems": 2
+            }
+        },
         "questions": {
             "abstract_question": {
                 "allOf": [
@@ -255,7 +322,8 @@
                             "namespace": { "$ref": "#/common/namespace" },
                             "insertBefore": { "$ref": "#/common/uids/uuid" },
                             "addReferences": { "$ref": "#/common/references/references" },
-                            "addExperts": { "$ref": "#/common/experts/experts" }
+                            "addExperts": { "$ref": "#/common/experts/experts" },
+                            "addMetricsWeights": { "$ref": "#/common/metrics/metric_weights"}
                         },
                         "required": ["namespace"]
                     }
@@ -266,6 +334,7 @@
                     { "$ref": "#/local/questions/abstract_question" },
                     {
                         "properties": {
+                            "answers": { "$ref": "#/local/answers/optionanswers" },
                             "addAnswers": { "$ref": "#/common/answers/optionanswers" }
                         }
                     }
