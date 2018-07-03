@@ -101,17 +101,17 @@
             }
         },
         "metrics": {
-            "metric_value": {
+            "metric_measure": {
                 "type": "object",
                 "properties": {
                     "uuid": { "$ref": "#/common/uids/uuid" },
-                    "value": { "type": "number", "minimum": 0, "maximum": 1}
+                    "measure": { "type": "number", "minimum": 0, "maximum": 1}
                 },
                 "required": ["uuid", "value"]
             },
-            "metric_values": {
+            "metric_measures": {
                 "type": "array",
-                "items": { "$ref": "#/common/metrics/metric_value" },
+                "items": { "$ref": "#/common/metrics/metric_measure" },
                 "default": []
             },
             "metric_weight": {
@@ -141,7 +141,7 @@
                     "uuid": { "$ref": "#/common/uids/uuid" },
                     "label": { "type": "string" },
                     "advice": { "type": "string" },
-                    "metricsValues": { "$ref": "#/common/metrics/metric_values"}
+                    "metrics": { "$ref": "#/common/metrics/metric_measures"}
                 },
                 "required": [ "uuid", "label"]
             },
@@ -170,7 +170,7 @@
                 "properties": {
                     "type": { "type": "string", "enum": ["option"] },
                     "answers": { "$ref": "#/common/answers/optionanswers" },
-                    "metricsWeights": { "$ref": "#/common/metrics/metric_weights"}
+                    "metrics": { "$ref": "#/common/metrics/metric_weights"}
                 },
                 "required": ["type", "answers"]
             },
